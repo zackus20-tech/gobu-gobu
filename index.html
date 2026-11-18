@@ -390,6 +390,53 @@ main{max-width:640px;margin:0 auto;padding:calc(16px + env(safe-area-inset-top))
 #app-p .phr .en{font-size:14px;margin-top:2px}
 #app-p .phr .sp{color:var(--muted);font-size:18px}
 
+
+#app-s .screen{display:none}#app-s .screen.on{display:block}
+.sp-panel{background:var(--card);border:3px solid var(--edge);border-radius:14px;box-shadow:0 4px 0 var(--edge);padding:12px;margin-bottom:14px}
+.sp-panel h2{font-family:'Pixelify Sans',sans-serif;font-weight:500;font-size:21px;margin:0 0 6px}.sp-panel h3{font-family:'Pixelify Sans',sans-serif;font-weight:500;font-size:17px;margin:0}
+.sp-panel p{font-size:14px;margin:6px 0}.sp-panel .jp,.sp-area .jp{font-family:'Noto Sans JP',sans-serif;font-size:13px;color:var(--muted);font-weight:500}
+.sp-ph{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:8px;flex-wrap:wrap}.sp-ph small{color:var(--muted);font-size:12px;font-family:'Noto Sans JP','Nunito',sans-serif}
+.sp-spr{image-rendering:pixelated;display:block;flex:none}
+.sp-starters{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.sp-starter{display:flex;flex-direction:column;align-items:center;gap:3px;border:3px solid var(--edge);border-bottom-width:5px;border-radius:12px;background:var(--paper);padding:10px 4px;cursor:pointer;color:var(--ink);font-family:'Nunito',sans-serif}
+.sp-starter b{font-family:'Noto Sans JP',sans-serif;font-size:16px}.sp-starter span{font-size:13px}
+.sp-type{display:inline-flex;align-items:baseline;gap:2px;color:#fff;border-radius:6px;padding:0 5px;font-family:'Noto Sans JP',sans-serif;font-size:12px;font-weight:700;line-height:18px;vertical-align:1px}.sp-type small{font-family:'Nunito',sans-serif;font-size:9px;font-weight:700;opacity:.9}
+.sp-team{display:flex;flex-direction:column;gap:6px}
+.sp-card{display:flex;align-items:center;gap:10px;border:2px solid var(--line);border-radius:10px;background:var(--paper);padding:6px 8px;text-align:left;cursor:pointer;color:var(--ink);font-family:'Nunito',sans-serif}
+.sp-card.lead{border-color:var(--sel);box-shadow:0 0 0 2px var(--sel-bg)}.sp-card > div{flex:1;min-width:0}.sp-card b{font-family:'Noto Sans JP',sans-serif;font-size:16px}
+.sp-card span{display:block;font-size:12px;color:var(--muted)}.sp-card .sp-type{display:inline-flex;color:#fff;font-size:12px}.sp-xp{height:5px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:3px}.sp-xp i{display:block;height:100%;background:var(--gold)}
+.sp-areas{display:grid;gap:6px}
+.sp-area{text-align:left;border:3px solid var(--edge);border-bottom-width:5px;border-radius:12px;background:var(--paper);padding:9px 12px;cursor:pointer;color:var(--ink);font-family:'Nunito',sans-serif}
+.sp-area b{display:block;font-size:15px}.sp-area small{color:var(--muted);font-size:12px}.sp-area.locked{opacity:.55;cursor:default;border-bottom-width:3px}
+.sp-item{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:7px 0;border-top:1px dashed var(--line);font-size:14px}.sp-item:first-child{border-top:none}
+.sp-item b{font-family:'Noto Sans JP',sans-serif;font-size:16px}.sp-item .sp-r{color:var(--muted);font-size:12px}.sp-item small{display:block;color:var(--muted);font-size:12px}
+.sp-count{font-weight:700;font-size:13px}.sp-buy{border:2px solid var(--edge);border-bottom-width:3px;border-radius:9px;background:var(--card);color:var(--ink);padding:5px 8px;font-family:'Nunito',sans-serif;font-weight:700;font-size:12px;cursor:pointer;white-space:nowrap}.sp-buy:disabled{opacity:.45;cursor:default}
+.sp-note{font-size:12px !important;color:var(--muted)}
+.sp-scroll{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:5px}
+.sp-cell{display:flex;flex-direction:column;align-items:center;gap:2px;border:2px solid var(--line);border-radius:9px;background:var(--paper);padding:5px 2px;cursor:pointer;color:var(--muted)}.sp-cell.have{border-color:var(--good);color:var(--ink)}
+.sp-cell small{font-family:'Noto Sans JP',sans-serif;font-size:9.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.sp-det{display:flex;gap:10px;align-items:flex-start;margin-top:10px;border-top:2px dashed var(--line);padding-top:10px}.sp-det b{font-family:'Noto Sans JP',sans-serif;font-size:17px}.sp-det p{font-size:13px}
+.sp-lv{font-size:12px;font-weight:700;color:var(--muted);margin-left:4px}
+.sp-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}.sp-top b{font-family:'Pixelify Sans',sans-serif;font-weight:500;font-size:19px}
+.sp-x{background:none;border:none;font-size:30px;line-height:1;color:var(--wood);cursor:pointer;font-weight:700;padding:0 4px}
+.sp-arenaWrap{position:relative;border:3px solid var(--edge);border-radius:12px;overflow:hidden;box-shadow:0 4px 0 var(--edge)}
+#s-arena{display:block;width:100%;image-rendering:pixelated;aspect-ratio:160/96}
+.sp-tag{position:absolute;background:rgba(251,244,228,.93);border:2px solid var(--edge);border-radius:9px;padding:3px 7px;font-size:12px;min-width:44%;max-width:58%}
+.sp-tag b{font-family:'Noto Sans JP',sans-serif;font-size:14px}.sp-tag.wild{left:6px;top:6px}.sp-tag.me{right:6px;bottom:6px}
+.sp-hp{display:block;height:7px;border:1.5px solid var(--edge);border-radius:4px;background:#fff;overflow:hidden;margin-top:3px}.sp-hp i{display:block;height:100%;background:var(--good);transition:width .5s}.sp-hp i.low{background:var(--bad)}
+.sp-hpn{display:block;text-align:right;font-size:11px;color:var(--muted)}
+.sp-msg{min-height:44px;font-size:15px;margin:12px 2px 8px;font-family:'Nunito','Noto Sans JP',sans-serif;line-height:1.4}
+.sp-act{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sp-btn{border:3px solid var(--edge);border-bottom-width:5px;border-radius:12px;background:var(--card);color:var(--ink);padding:10px 8px;font-family:'Pixelify Sans',sans-serif;font-size:17px;cursor:pointer}
+.sp-btn small{display:block;font-family:'Nunito',sans-serif;font-size:11px;color:var(--muted)}.sp-btn.alt{background:var(--paper)}.sp-btn:disabled{opacity:.45;cursor:default}
+.sp-btn.mv b{display:block;font-family:'Noto Sans JP',sans-serif;font-size:19px;font-weight:700}
+.sp-det .sp-btn{font-size:14px;padding:6px 10px;margin-top:4px}
+.sp-qp{margin:4px 0 6px;font-size:14px;color:var(--muted);text-align:center}
+.sp-qbig{font-family:'Noto Sans JP',sans-serif;font-size:34px;text-align:center;margin:0 0 10px;line-height:1.3;word-break:keep-all}
+.sp-qopts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.sp-opt{border:3px solid var(--edge);border-bottom-width:5px;border-radius:12px;background:var(--card);color:var(--ink);padding:12px 6px;font-family:'Nunito',sans-serif;font-weight:700;font-size:15px;cursor:pointer}
+.sp-opt.ok{background:var(--good-bg);border-color:var(--good);color:var(--good)}.sp-opt.bad{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.sp-evs{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}.sp-ev{font-size:13px;background:var(--paper);border:2px solid var(--line);border-radius:9px;padding:6px 9px}.sp-ev.done{border-color:var(--good);background:var(--good-bg)}
 #shell h1{font-size:22px;margin:4px 0 2px;display:flex;align-items:center;gap:10px}
 #shell h1 .stamp{display:inline-grid;place-items:center;flex:none;width:46px;height:40px;border-radius:9px;background:var(--accent);color:var(--accent-ink);font-size:17px;font-family:"Noto Sans JP",sans-serif;white-space:nowrap}
 #shell h1 .devtag{font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;background:#7a55b0;color:#fff;padding:2px 6px;border-radius:6px;vertical-align:middle}
@@ -400,18 +447,46 @@ main{max-width:640px;margin:0 auto;padding:calc(16px + env(safe-area-inset-top))
 @media (max-width:400px){#shell h1 .sfx-btn span{display:none}}
 #shell h1 .jpname{font-family:"Noto Sans JP",sans-serif;font-size:15px;color:var(--muted);font-weight:500;margin-left:4px}
 #shell .sub{color:var(--muted);margin:0 0 14px;font-size:14px}
+
+.view{display:none}.view.on{display:block}
+body.in-task #shell, body.in-task .bnav, body.in-task .learn-top{display:none !important}
+.menu-btn{margin-left:auto;display:flex;align-items:center;gap:7px;border:3px solid var(--edge);border-bottom-width:6px;border-radius:12px;background:var(--gold);color:var(--ink);padding:8px 14px 7px;font-family:'Pixelify Sans',sans-serif;font-size:18px;font-weight:500;cursor:pointer;flex:none;box-shadow:0 2px 0 rgba(0,0,0,.12)}
+#shell h1 > span:nth-child(2){white-space:nowrap;min-width:0;overflow:hidden}
+@media (max-width:420px){#shell h1 .jpname{display:none}}
+@media (max-width:350px){.menu-btn{padding:7px 10px 6px;font-size:16px}#shell h1{font-size:18px !important;gap:7px !important}#shell h1 .stamp{width:40px;height:36px}}
+.menu-btn:active{transform:translateY(2px);border-bottom-width:4px}
+.menu-btn i{width:20px;height:20px;image-rendering:pixelated;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath fill='%233b2a1a'  d='M0 1h8v1H0zM0 4h8v1H0zM0 7h8v1H0z'/%3E%3C/svg%3E") center/20px no-repeat}
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:8;display:grid;grid-template-columns:repeat(5,1fr);background:var(--paper);border-top:3px solid var(--edge);padding:4px max(calc(4px + env(safe-area-inset-right)), calc(50% - 330px)) calc(4px + env(safe-area-inset-bottom)) max(calc(4px + env(safe-area-inset-left)), calc(50% - 330px))}
+.bnav button{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;border:none;background:transparent;color:var(--ink);font-family:'Nunito',sans-serif;font-weight:700;font-size:11.5px;padding:6px 2px 4px;border-radius:10px;cursor:pointer}
+.bnav button i{width:28px;height:28px;image-rendering:pixelated;background-size:28px;background-repeat:no-repeat;background-position:center;filter:drop-shadow(1px 1px 0 rgba(59,42,26,.55))}
+.bnav button.on{color:var(--ink);background:var(--card);box-shadow:inset 0 0 0 3px var(--edge)}.bnav button.on span{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.bnav .dot{display:none;position:absolute;top:4px;right:calc(50% - 18px);width:9px;height:9px;border-radius:50%;background:var(--bad);border:2px solid var(--paper)}.bnav button.has-dot .dot{display:block}
+.ni-village{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath fill='%235f9a3c'  d='M3 0h2v1h1v1h1v1h1v1H7v4H5V5H3v3H1V4H0V3h1V2h1V1h1z'/%3E%3C/svg%3E")}.ni-learn{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath fill='%233d6fb5' fill-rule='evenodd' d='M0 1h3v1h2V1h3v6H5v1H3V7H0zM1 2v4h2v1V3H3V2zM7 2H5v1h0v4V6h2z'/%3E%3C/svg%3E")}.ni-spirits{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath fill='%237a55b0' fill-rule='evenodd' d='M2 0h4v1h1v1h1v6H7V7H6v1H5V7H3v1H2V7H1v1H0V2h1V1h1zM2 3v1h1V3zM5 3v1h1V3z'/%3E%3C/svg%3E")}.ni-buddy{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath fill='%23d0462f'  d='M1 1h2v1h2V1h2v1h1v2H7v1H6v1H5v1H3V6H2V5H1V4H0V2h1z'/%3E%3C/svg%3E")}.ni-goals{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath fill='%23d4951a'  d='M1 0h6v1h1v2H7v1H6v1H5v1h1v1H2V6h1V5H2V4H1V3H0V1h1z'/%3E%3C/svg%3E")}
+.learn-top{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.learn-top .tabs{margin-bottom:0}
+.learn-stamps{align-self:flex-end;background:none;border:none;color:var(--sel);font-weight:700;font-size:13px;cursor:pointer;padding:2px 4px}
+.goal-links{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.goal-links button{text-align:left;border:3px solid var(--edge);border-bottom-width:5px;border-radius:12px;background:var(--card);color:var(--ink);padding:10px 12px;cursor:pointer;font-family:'Nunito',sans-serif}
+.goal-links b{display:block;font-family:'Pixelify Sans',sans-serif;font-weight:500;font-size:17px}.goal-links small{color:var(--muted);font-size:12px}
+.menu-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}.menu-list button{text-align:left;border:2px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);padding:11px 12px;font-family:'Nunito',sans-serif;font-weight:700;font-size:15px;cursor:pointer}
+.menu-list button small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
 .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;background:var(--line);padding:4px;border-radius:14px;margin-bottom:14px}
-.tabs button{border:none;background:transparent;color:var(--ink);font-weight:600;font-size:15px;padding:10px;border-radius:10px;cursor:pointer}
+.tabs button{border:none;background:transparent;color:var(--ink);font-weight:600;font-size:15px;padding:10px 2px;border-radius:10px;cursor:pointer;min-width:0}
+@media (max-width:440px){.tabs button{font-size:12.5px}}
 .tabs button.on{background:var(--card);box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .tabs button span{font-family:"Noto Sans JP",sans-serif;display:block;margin:0 0 2px}
 .app{display:none}.app.on{display:block}
 #app-h #h-home > h1, #app-h #h-home > .sub, #app-k #k-home > h1, #app-k #k-home > .sub, #app-p #p-home .headrow h1, #app-p #p-home > .sub, #app-j #j-home .headrow h1, #app-j #j-home > .sub{display:none}
 #app-j #j-home .headrow{justify-content:flex-end;margin-bottom:10px}
 #app-p #p-home .headrow{justify-content:flex-end;margin-bottom:10px}
-main{padding-bottom:calc(190px + env(safe-area-inset-bottom)) !important}
-html.gobu-guest main{padding-bottom:calc(280px + env(safe-area-inset-bottom)) !important}
-html.gobu-guest #app-h .startbar, html.gobu-guest #app-k .startbar, html.gobu-guest #app-j .startbar, html.gobu-guest #app-p .startbar,
-html.gobu-guest #app-p .feedback, html.gobu-guest #app-j .feedback, html.gobu-guest .rc-fb, html.gobu-guest .tour{bottom:var(--guest-gap,84px) !important;border-radius:12px 12px 0 0}
+main{padding-bottom:calc(250px + env(safe-area-inset-bottom)) !important}
+html.gobu-guest main{padding-bottom:calc(340px + env(safe-area-inset-bottom)) !important}
+body:not(.in-task) #app-h .startbar, body:not(.in-task) #app-k .startbar, body:not(.in-task) #app-j .startbar, body:not(.in-task) #app-p .startbar{bottom:calc(62px + env(safe-area-inset-bottom)) !important;border-bottom:none}
+body:not(.in-task) .tour{bottom:62px}
+html.gobu-guest .bnav{bottom:var(--guest-gap,84px);border-radius:12px 12px 0 0}
+html.gobu-guest body:not(.in-task) #app-h .startbar, html.gobu-guest body:not(.in-task) #app-k .startbar, html.gobu-guest body:not(.in-task) #app-j .startbar, html.gobu-guest body:not(.in-task) #app-p .startbar{bottom:calc(var(--guest-gap,84px) + 62px) !important}
+html.gobu-guest body:not(.in-task) .tour{bottom:calc(var(--guest-gap,84px) + 62px) !important}
+html.gobu-guest body.in-task #app-h .startbar, html.gobu-guest body.in-task #app-k .startbar, html.gobu-guest body.in-task #app-j .startbar, html.gobu-guest body.in-task #app-p .startbar,
+html.gobu-guest #app-p .feedback, html.gobu-guest #app-j .feedback, html.gobu-guest .rc-fb, html.gobu-guest body.in-task .tour{bottom:var(--guest-gap,84px) !important;border-radius:12px 12px 0 0}
 html.gobu-guest .startbar{box-shadow:0 -2px 0 var(--edge)}
 .s-overlay.pg-overlay{display:block;overflow-y:auto;-webkit-overflow-scrolling:touch}
 .pg-box{background:var(--card);color:var(--ink);border:3px solid var(--edge);border-radius:12px;box-shadow:0 4px 0 var(--edge);padding:16px;width:min(560px,100%);margin:10px auto 40px}
@@ -494,13 +569,10 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1}
 <main>
 
 <div id="shell">
-  <h1><span class="stamp">ゴブ</span><span>Gobu Gobu <small class="jpname">ゴブゴブ</small></span><button class="sfx-btn" id="sfxBtn" type="button"></button></h1>
-  <p class="sub">Japanese practice with goblins: hiragana and everyday phrases, a few minutes at a time. Every finished lesson builds homes for the goblins of Kanamura and earns mushrooms for your goblin buddy.</p>
-  <div class="village" id="homeVillage"></div>
-  <div class="today" id="homeToday"></div>
-  <div class="buddy" id="homeBuddy"></div>
-  <div class="tabs"><button data-app="h"><span>あ</span>Hiragana</button><button data-app="k"><span>ア</span>Katakana</button><button data-app="j"><span>字</span>Kanji</button><button data-app="p"><span>はい</span>Phrases</button></div>
+  <h1><span class="stamp">ゴブ</span><span>Gobu Gobu <small class="jpname">ゴブゴブ</small></span><button class="menu-btn" id="menuBtn" type="button" aria-label="Menu"><i></i><span>Menu</span></button></h1>
 </div>
+<section class="view" id="view-village"><div class="village" id="homeVillage"></div><div class="today" id="homeToday"></div></section>
+<section class="view" id="view-learn"><div class="learn-top"><div class="tabs"><button data-app="h"><span>あ</span>Hiragana</button><button data-app="k"><span>ア</span>Katakana</button><button data-app="j"><span>字</span>Kanji</button><button data-app="p"><span>はい</span>Phrases</button></div><button class="learn-stamps" id="learnStamps" type="button">Stamp book ›</button></div>
 <div class="app" id="app-h">
 
 <!-- HOME -->
@@ -921,6 +993,27 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1}
 <div class="feedback" id="p-feedback"><div class="fbt"><span id="p-fbHead"></span><small id="p-fbSub"></small></div><button class="btn" id="p-fbNext">Continue</button></div>
 
 </div>
+</section>
+<section class="view" id="view-spirits"><div class="app" id="app-s">
+<div id="s-home" class="screen on"><div id="s-homeBody"></div></div>
+<div id="s-battle" class="screen">
+  <div class="sp-top"><button class="sp-x" id="s-bQuit" title="Run back home" aria-label="Run back home">×</button><b>Spirit duel</b></div>
+  <div class="sp-arenaWrap"><canvas id="s-arena" width="160" height="96"></canvas><div class="sp-tag wild" id="s-bWild"></div><div class="sp-tag me" id="s-bMe"></div></div>
+  <p class="sp-msg" id="s-bMsg"></p>
+  <div id="s-bQ"></div>
+  <div class="sp-act" id="s-bAct"></div>
+</div>
+</div>
+</section>
+<section class="view" id="view-buddy"><div class="buddy" id="homeBuddy"></div><div class="today" id="buddyToday"></div></section>
+<section class="view" id="view-goals"><div class="today" id="goalsToday"></div><div class="goal-links"><button type="button" id="goalStamps"><b>Stamp book</b><small>Bronze, silver and gold stamps</small></button><button type="button" id="goalProgress"><b>Your progress</b><small>The last 14 days</small></button></div></section>
+<nav class="bnav" id="bnav">
+  <button data-view="village"><i class="ni-village"></i><span>Village</span><b class="dot"></b></button>
+  <button data-view="learn"><i class="ni-learn"></i><span>Learn</span><b class="dot"></b></button>
+  <button data-view="spirits"><i class="ni-spirits"></i><span>Spirits</span><b class="dot"></b></button>
+  <button data-view="buddy"><i class="ni-buddy"></i><span>Buddy</span><b class="dot"></b></button>
+  <button data-view="goals"><i class="ni-goals"></i><span>Goals</span><b class="dot"></b></button>
+</nav>
 </main>
 <script>window.GOBU_FEEDBACK_URL="https://github.com/zackus20-tech/gobu-gobu/issues/new";</script><script>
 /* Sound effects: tiny synthesised chiptune sounds (Web Audio), muted with a switch in the header. */
@@ -1121,6 +1214,19 @@ ART.bath = function(c){ r(c,3,4,22,3,C.slate); r(c,1,7,26,1,C.slateD); r(c,6,2,1
 ART.school = function(c){ r(c,13,0,4,6,C.woodL); r(c,14,1,2,2,C.gold); tri(c,15,4,15,6,C.red); r(c,0,9,30,1,C.redD); r(c,2,10,26,12,C.cream); for (var x=4;x<27;x+=6) r(c,x,12,4,3,C.glass); r(c,13,16,4,6,C.door); r(c,2,21,26,1,C.creamD); r(c,22,17,4,2,"#2a2116"); };
 ART.library = function(c){ tri(c,13,0,13,7,C.slate); r(c,0,6,26,1,C.slateD); r(c,2,7,22,15,"#c9b38a"); r(c,3,8,2,14,C.cream); r(c,21,8,2,14,C.cream); r(c,11,14,4,8,C.door); r(c,7,10,3,3,C.glass); r(c,16,10,3,3,C.glass); r(c,7,16,3,3,C.glass); r(c,16,16,3,3,C.glass); r(c,10,8,6,2,C.woodD); };
 ART.orchard = function(c){ for (var x=0;x<30;x+=3) r(c,x,10,1,4,C.woodL); r(c,0,11,30,1,C.woodL); [[5,5],[15,4],[25,5]].forEach(function(p){ r(c,p[0],7,1,6,C.wood); ell(c,p[0],5,4,3,C.leaf); r(c,p[0]-2,4,1,1,C.red); r(c,p[0]+1,6,1,1,C.red); r(c,p[0]+2,3,1,1,"#8a4fa8"); }); };
+// second-chapter art: the Mountain Pass and the Harbour
+ART.lodge = function(c){ r(c,15,1,2,5,C.stoneD); tri(c,10,0,10,9,C.woodD); tri(c,10,0,5,3,"#f4f8fa"); r(c,0,8,20,1,"#3e2614"); r(c,2,9,16,9,C.wood); for (var y=10;y<18;y+=2) r(c,2,y,16,1,C.woodD); r(c,8,12,4,6,C.door); r(c,3,11,3,3,C.glass); r(c,14,11,3,3,C.glass); r(c,0,8,3,1,"#f4f8fa"); r(c,17,8,3,1,"#f4f8fa"); };
+ART.forge = function(c){ r(c,16,0,4,9,C.stoneD); r(c,16,0,4,1,"#5b6168"); tri(c,9,3,9,6,C.slate); r(c,0,8,18,1,C.slateD); r(c,1,9,16,9,C.stone); for (var y=10;y<18;y+=2) for (var x=2+((y/2)%2)*2;x<17;x+=4) r(c,x,y,1,1,C.stoneD); r(c,5,12,6,6,"#2a2116"); r(c,6,13,4,5,"#e8642c"); r(c,7,14,2,3,"#f39a33"); r(c,7,15,1,1,"#ffe27a"); r(c,13,11,3,2,C.glass); r(c,18,14,4,1,"#3a3a3a"); r(c,19,15,2,3,"#3a3a3a"); r(c,18,17,4,1,"#3a3a3a"); };
+ART.tower = function(c){ tri(c,7,0,7,3,C.red); r(c,1,3,12,5,C.woodL); r(c,4,4,6,2,C.glass); r(c,0,8,14,2,C.wood); r(c,2,10,1,22,C.woodD); r(c,11,10,1,22,C.woodD); for (var k=0;k<20;k+=5){ for (var d=0;d<8;d++){ r(c,3+d,11+k+Math.floor(d*0.6),1,1,C.wood); } } r(c,6,10,1,22,C.woodL); for (var y=12;y<32;y+=3) r(c,5,y,3,1,C.woodL); };
+ART.ramen = function(c){ r(c,0,2,20,4,C.red); r(c,0,6,20,1,C.redD); for (var x=1;x<20;x+=4) r(c,x,3,2,1,C.redL); r(c,1,7,1,10,C.woodD); r(c,18,7,1,10,C.woodD); r(c,3,11,14,1,C.glass); for (var k=0;k<4;k++){ r(c,3+k*4,7,3,4,"#2a3a6a"); r(c,4+k*4,8,1,1,"#ffffff"); } r(c,1,12,18,5,C.woodL); r(c,1,12,18,1,C.wood); r(c,17,7,2,3,C.red); r(c,17,7,2,1,C.gold); r(c,4,14,3,1,C.cream); r(c,12,14,3,1,C.cream); };
+ART.barn = function(c){ tri(c,13,0,13,7,C.redD); r(c,1,7,24,11,C.red); r(c,1,7,24,1,C.redD); r(c,9,9,8,9,C.cream); for (var d=0;d<8;d++){ r(c,9+d,9+d,1,1,C.redD); r(c,16-d,9+d,1,1,C.redD); } r(c,4,10,3,3,C.glass); r(c,19,10,3,3,C.glass); r(c,11,3,4,3,C.woodD); r(c,12,4,2,2,C.thatch); r(c,0,16,3,2,C.thatch); r(c,23,16,3,2,C.thatch); };
+ART.shipyard = function(c){ r(c,0,2,30,3,C.slate); r(c,0,5,30,1,C.slateD); r(c,2,1,26,1,"#6a7ea3"); r(c,1,6,1,12,C.woodD); r(c,28,6,1,12,C.woodD); r(c,3,7,2,2,C.glass); r(c,5,13,20,3,C.wood); r(c,7,16,16,1,C.woodD); r(c,4,12,1,2,C.wood); r(c,25,11,1,3,C.wood); for (var x=7;x<24;x+=3) r(c,x,9,1,4,C.woodL); r(c,6,9,18,1,C.woodL); r(c,24,6,4,1,C.woodL); r(c,25,7,1,4,C.woodD); };
+ART.cabin = function(c){ r(c,4,0,2,5,C.stoneD); tri(c,10,0,10,8,"#3f6b3a"); r(c,0,7,20,1,"#2c4f2a"); r(c,2,8,16,9,C.wood); for (var y=9;y<17;y+=2) r(c,2,y,16,1,C.woodD); r(c,8,11,4,6,C.door); r(c,3,10,3,3,C.glass); r(c,14,10,3,3,C.glass); r(c,1,16,2,1,C.woodL); r(c,17,16,2,1,C.woodL); };
+ART.inn = function(c){ r(c,17,0,2,4,C.stoneD); tri(c,11,0,11,6,"#3d6fb5"); r(c,0,6,22,1,"#2c528a"); r(c,1,7,20,15,C.cream); r(c,1,13,20,1,C.woodD); r(c,1,7,1,15,C.woodD); r(c,20,7,1,15,C.woodD); r(c,3,9,3,3,C.glass); r(c,9,9,4,3,C.glass); r(c,16,9,3,3,C.glass); r(c,3,15,3,3,C.glass); r(c,9,15,4,7,C.door); r(c,15,15,5,3,C.woodL); r(c,16,16,3,1,C.red); };
+ART.pottery = function(c){ ell(c,18,10,6,7,"#b8763e"); ell(c,17,8,3,3,"#cc8a50"); r(c,16,12,4,5,"#2a2116"); r(c,17,14,2,3,"#e8642c"); tri(c,7,2,7,5,C.thatch); r(c,0,6,14,1,C.thatchD); r(c,1,7,12,10,"#e3c9a0"); r(c,5,10,4,7,C.door); r(c,10,9,2,3,C.glass); r(c,1,14,2,3,"#b8763e"); r(c,0,15,1,1,"#b8763e"); r(c,11,14,2,3,"#8a4fa8"); };
+ART.lighthouse = function(c){ tri(c,7,0,4,2,C.redD); r(c,3,2,8,1,C.redD); r(c,4,3,6,5,C.glass); r(c,4,3,1,5,"#2a2116"); r(c,9,3,1,5,"#2a2116"); r(c,2,8,10,1,"#2a2116"); r(c,3,9,8,25,C.cream); for (var y=12;y<34;y+=8) r(c,3,y,8,4,C.red); r(c,10,9,1,25,C.creamD); r(c,6,29,2,5,C.door); r(c,2,33,10,1,C.stoneD); };
+ART.fishmkt = function(c){ for (var k=0;k<13;k++) r(c,k*2,2,2,4,k%2 ? C.cream : C.blue); r(c,0,6,26,1,"#2c528a"); r(c,9,0,8,2,C.woodL); r(c,11,0,4,1,C.woodD); r(c,1,7,1,9,C.woodD); r(c,24,7,1,9,C.woodD); r(c,12,7,2,1,C.glass); r(c,2,10,22,1,"#dfeef5"); [4,9,14,19].forEach(function(x,i){ r(c,x,9,4,1,i%2 ? "#e0866a" : "#9fb8c8"); r(c,x+4,8,1,3,i%2 ? "#e0866a" : "#9fb8c8"); r(c,x,9,1,1,"#2a2116"); }); r(c,2,11,22,2,C.woodL); r(c,3,13,1,3,C.woodD); r(c,22,13,1,3,C.woodD); };
+ART.hcottage = function(c){ r(c,13,0,2,4,C.stoneD); tri(c,9,0,9,8,"#2f8f7a"); r(c,0,7,18,1,"#226b5c"); r(c,2,8,14,8,"#dfe6e8"); r(c,7,11,4,5,C.door); r(c,3,10,3,2,C.glass); r(c,12,10,3,2,C.glass); for (var y=13;y<16;y++) for (var x=12;x<16;x++) if ((x+y)%2) r(c,x,y,1,1,"#c8b28a"); };
 var cache = {};
 function sprite(b){
   if (cache[b.id]) return cache[b.id];
@@ -1144,22 +1250,47 @@ var DISTRICT = [
   {id:"cottageB", name:"hillside cottage", area:"the Fields", cost:5, res:[19], x:-80, y:97, w:18, h:16},
   {id:"library", name:"library", area:"Riverside", cost:5, res:[], communal:"Stories for rainy days.", x:232, y:61, w:26, h:22},
   {id:"boathouse", name:"boathouse", area:"Riverside", cost:5, res:[20], x:322, y:97, w:20, h:16},
-  {id:"orchard", name:"orchard", area:"the Fields", cost:5, res:[], communal:"Apples and plums for all.", x:-120, y:61, w:30, h:14}
+  {id:"orchard", name:"orchard", area:"the Fields", cost:5, res:[], communal:"Apples and plums for all.", x:-120, y:61, w:30, h:14},
+  // second chapter: the Mountain Pass (far left) and the Harbour (far right), built between adventures 7 to 12
+  {id:"lodge", name:"mountain lodge", area:"the Mountain Pass", cost:5, res:[], resOff:[0], x:-372, y:97, w:20, h:18},
+  {id:"fishmkt", name:"fish market", area:"the Harbour", cost:5, res:[], communal:"Fresh fish for everyone.", x:432, y:97, w:26, h:16},
+  {id:"forge", name:"forge", area:"the Mountain Pass", cost:6, res:[], communal:"Shiny new tools for everyone.", x:-328, y:97, w:22, h:18},
+  {id:"hcottage", name:"harbour cottage", area:"the Harbour", cost:6, res:[], resOff:[1], x:474, y:97, w:18, h:16},
+  {id:"tower", name:"watchtower", area:"the Mountain Pass", cost:6, res:[], communal:"Lookouts keep the valley safe.", x:-382, y:61, w:14, h:32},
+  {id:"ramen", name:"ramen stall", area:"the Harbour", cost:6, res:[], communal:"Hot noodles on cold nights.", x:440, y:61, w:20, h:17},
+  {id:"barn", name:"goat barn", area:"the Mountain Pass", cost:7, res:[], communal:"Fresh goat's milk every morning.", x:-296, y:61, w:26, h:18},
+  {id:"shipyard", name:"shipyard", area:"the Harbour", cost:7, res:[], communal:"A little boat for every goblin.", x:514, y:61, w:30, h:18},
+  {id:"cabin", name:"pine cabin", area:"the Mountain Pass", cost:7, res:[], resOff:[2,3], x:-262, y:97, w:20, h:17},
+  {id:"inn", name:"harbour inn", area:"the Harbour", cost:7, res:[], resOff:[4,5], x:552, y:97, w:22, h:22},
+  {id:"pottery", name:"pottery", area:"the Mountain Pass", cost:8, res:[], communal:"Bowls and cups for everyone.", x:-236, y:61, w:24, h:17},
+  {id:"lighthouse", name:"lighthouse", area:"the Harbour", cost:8, res:[], communal:"Ships always find their way home.", x:580, y:61, w:14, h:34}
 ];
+var NEWCOMERS2 = [["Pebble","Climbs mountains for fun.",50],["Kelp","Knows every fish by name.",60],["Bracken","Chops wood and sings while doing it.",70],["Saffron","Makes the spiciest curry in the land.",80],["Barnacle","Has sailed all seven seas (he says).",90],["Clover","Finds four-leaf clovers everywhere.",100]];
 var NEWCOMERS = [["Biscuit","Bakes the best buns in the Fields.",5],["Juniper","Keeps every book in perfect order.",10],["Wobble","Can't walk in a straight line.",15],["Fig","Grows enormous turnips.",20],["Marlow","Rows a boat every morning.",30],["Tinsel","Loves anything shiny and sparkly.",40]];
 var ALLB = BUILDINGS.concat(DISTRICT);
-var TIMELINE = []; for (var ti=0; ti<6; ti++){ TIMELINE.push({adv:ti}); TIMELINE.push({b:ti*2}); TIMELINE.push({b:ti*2+1}); }
-function entryCost(e){ return e.adv !== undefined ? ADVENTURES[e.adv].cost : DISTRICT[e.b].cost; }
+// Timeline after the centre is built: adventure, building, building (x12), then a stone upgrade and a lantern upgrade for every building.
+var TIMELINE = []; for (var ti=0; ti<12; ti++){ TIMELINE.push({adv:ti}); TIMELINE.push({b:ti*2}); TIMELINE.push({b:ti*2+1}); }
+var UPG_FROM = TIMELINE.length;
+[2,3].forEach(function(lv){ ALLB.forEach(function(b, i){ TIMELINE.push({up:i, lv:lv}); }); });
+var UPG_NAME = {2:"stone upgrade", 3:"lantern upgrade"};
+function entryCost(e){ return e.adv !== undefined ? ADVENTURES[e.adv].cost : e.up !== undefined ? (e.lv === 2 ? 2 : 3) : DISTRICT[e.b].cost; }
 function timelineAt(extra){
-  var t = {started:extra >= 0, entry:-1, done:0, advDone:0, advCur:-1, dBuilt:DISTRICT.map(function(){ return 0; }), extra:0};
+  var t = {started:extra >= 0, entry:-1, done:0, advDone:0, advCur:-1, dBuilt:DISTRICT.map(function(){ return 0; }), up:ALLB.map(function(){ return 1; }), extra:0};
   if (extra < 0) return t;
   var left = extra;
   for (var i=0;i<TIMELINE.length;i++){
     var e = TIMELINE[i], cost = entryCost(e);
-    if (left < cost){ t.entry = i; t.done = left; if (e.adv !== undefined) t.advCur = e.adv; else t.dBuilt[e.b] = left; return t; }
-    left -= cost; if (e.adv !== undefined) t.advDone++; else t.dBuilt[e.b] = cost;
+    if (left < cost){ t.entry = i; t.done = left; if (e.adv !== undefined) t.advCur = e.adv; else if (e.b !== undefined) t.dBuilt[e.b] = left; return t; }
+    left -= cost; if (e.adv !== undefined) t.advDone++; else if (e.up !== undefined) t.up[e.up] = e.lv; else t.dBuilt[e.b] = cost;
   }
   t.extra = left; return t;
+}
+function upLevel(i, p){ return p.tl.up ? p.tl.up[i] : 1; }
+function chapter2Open(){ return villageDone() && prog.tl.advDone >= 6; }
+function entryLabel(e){
+  if (e.adv !== undefined) return "Adventure: " + names(ADVENTURES[e.adv].party) + " are off to the " + ADVENTURES[e.adv].place;
+  if (e.up !== undefined) return "Giving the " + ALLB[e.up].name + " a " + UPG_NAME[e.lv];
+  return "Building the " + DISTRICT[e.b].name + " in " + DISTRICT[e.b].area;
 }
 function progressFor(s){
   var left = s, built = [];
@@ -1254,7 +1385,20 @@ var DECOS = [
   {id:"sign", name:"signpost", x:193, y:71},
   {id:"sunflower", name:"sunflower", x:141, y:84},
   {id:"barrel", name:"barrel", x:167, y:84},
-  {id:"maypole", name:"festival maypole", x:196, y:126, festival:true}
+  {id:"maypole", name:"festival maypole", x:196, y:126, festival:true},
+  // rewards from the stamp book, weekly quests and village ranks
+  {id:"birdbath", name:"bird bath", x:-170, y:84},
+  {id:"bunny", name:"stone rabbit", x:-40, y:86},
+  {id:"wagon", name:"flower wagon", x:-110, y:86},
+  {id:"chime", name:"wind chime post", x:244, y:86},
+  {id:"koipond", name:"koi pond", x:300, y:88},
+  {id:"bell", name:"village bell", x:206, y:80},
+  {id:"totem", name:"goblin totem pole", x:12, y:90},
+  {id:"swing", name:"tree swing", x:352, y:86},
+  {id:"scope", name:"telescope", x:-356, y:86},
+  {id:"buoy", name:"striped buoy", x:470, y:84},
+  {id:"crabs", name:"crab family", x:590, y:90},
+  {id:"arch", name:"flower arch", x:-14, y:88}
 ];
 function drawDeco(c, d){
   var x = d.x, y = d.y;
@@ -1275,6 +1419,18 @@ function drawDeco(c, d){
   else if (d.id === "chochin"){ r(c,x-8,y-12,1,12,C.woodD); r(c,x+8,y-12,1,12,C.woodD); r(c,x-8,y-12,17,1,"#2a2116"); [-5,-1,3].forEach(function(o){ r(c,x+o,y-11,2,3,C.red); r(c,x+o,y-11,2,1,"#2a2116"); }); }
   else if (d.id === "dango"){ r(c,x-5,y-5,10,5,C.woodL); r(c,x-5,y-5,10,1,C.wood); r(c,x-6,y-9,12,2,C.red); r(c,x-5,y-7,1,2,C.woodD); r(c,x+4,y-7,1,2,C.woodD); [-2,1].forEach(function(o){ r(c,x+o,y-7,1,1,C.pink); r(c,x+o,y-6,1,1,"#ffffff"); r(c,x+o+1,y-7,1,1,"#7cb85a"); }); }
   else if (d.id === "tanuki"){ ell(c,x,y-3,3,3,"#8a6a4a"); ell(c,x,y-3,2,2,"#d9c49a"); ell(c,x,y-8,3,2,"#8a6a4a"); r(c,x-2,y-8,1,1,"#2a2116"); r(c,x+2,y-8,1,1,"#2a2116"); r(c,x-3,y-10,1,1,"#8a6a4a"); r(c,x+3,y-10,1,1,"#8a6a4a"); r(c,x-2,y-11,5,1,"#c8a060"); r(c,x+3,y-5,2,3,"#d9b65a"); }
+  else if (d.id === "birdbath"){ r(c,x-1,y-4,2,4,C.stone); r(c,x-3,y-5,6,1,C.stoneD); r(c,x-2,y-6,4,1,C.water); r(c,x+1,y-8,2,2,"#5a86c8"); r(c,x+3,y-8,1,1,C.gold); }
+  else if (d.id === "bunny"){ ell(c,x,y-2,2,2,C.stone); r(c,x-1,y-7,1,3,C.stone); r(c,x+1,y-7,1,3,C.stone); ell(c,x,y-4,2,1,C.stone); r(c,x,y-4,1,1,"#2a2116"); r(c,x-3,y,7,1,C.stoneD); }
+  else if (d.id === "wagon"){ r(c,x-5,y-5,10,3,C.wood); ell(c,x-3,y-1,1,1,C.woodD); ell(c,x+3,y-1,1,1,C.woodD); for (var w2=-4;w2<5;w2+=2) r(c,x+w2,y-7,1,2,[C.pink,C.gold,"#ffffff",C.red,C.blue][(w2+4)/2]); r(c,x+5,y-6,3,1,C.woodD); }
+  else if (d.id === "chime"){ r(c,x,y-12,1,12,C.woodD); r(c,x-3,y-12,7,1,C.woodD); [-3,-1,1,3].forEach(function(o,k){ r(c,x+o,y-11,1,2+(k%2),"#c0c8d0"); }); r(c,x-1,y-8,2,2,C.red); }
+  else if (d.id === "koipond"){ ell(c,x,y-3,7,3,C.water); ell(c,x,y-3,6,2,"#5aa0d8"); r(c,x-3,y-4,2,1,"#f08040"); r(c,x+2,y-3,2,1,"#ffffff"); r(c,x+3,y-3,1,1,"#f08040"); r(c,x-6,y-5,2,2,C.stone); r(c,x+5,y-2,2,2,C.stone); }
+  else if (d.id === "bell"){ r(c,x-4,y-12,1,12,C.woodD); r(c,x+4,y-12,1,12,C.woodD); r(c,x-5,y-13,11,1,C.red); r(c,x-2,y-10,5,5,"#b08a3a"); r(c,x-1,y-11,3,1,"#b08a3a"); r(c,x-1,y-9,1,2,"#e0c070"); }
+  else if (d.id === "totem"){ r(c,x-2,y-16,4,16,C.wood); r(c,x-2,y-16,4,4,C.leaf); r(c,x-1,y-15,1,1,"#2a2116"); r(c,x+1,y-15,1,1,"#2a2116"); r(c,x-3,y-15,1,2,C.leaf); r(c,x+2,y-15,1,2,C.leaf); r(c,x-2,y-10,4,1,C.red); r(c,x-1,y-8,2,2,C.gold); r(c,x-2,y-4,4,1,C.blue); }
+  else if (d.id === "swing"){ r(c,x-6,y-16,12,1,C.woodD); r(c,x-4,y-15,1,10,"#c8b28a"); r(c,x+3,y-15,1,10,"#c8b28a"); r(c,x-5,y-5,10,1,C.woodL); r(c,x-7,y-16,1,16,C.wood); r(c,x+6,y-16,1,16,C.wood); }
+  else if (d.id === "scope"){ r(c,x-1,y-3,1,3,C.woodD); r(c,x+1,y-3,1,3,C.woodD); r(c,x,y-5,1,2,C.woodD); r(c,x-3,y-8,7,2,"#b08a3a"); r(c,x+4,y-9,1,2,"#e0c070"); }
+  else if (d.id === "buoy"){ var bob = Math.round(Math.sin(performance.now()/500)); r(c,x-2,y-6+bob,4,5,C.red); r(c,x-2,y-4+bob,4,1,"#ffffff"); r(c,x,y-8+bob,1,2,C.woodD); }
+  else if (d.id === "crabs"){ [[-4,0],[1,1],[5,0]].forEach(function(o){ r(c,x+o[0]-1,y-2+o[1],3,2,C.red); r(c,x+o[0]-2,y-3+o[1],1,1,C.red); r(c,x+o[0]+2,y-3+o[1],1,1,C.red); r(c,x+o[0],y-3+o[1],1,1,"#2a2116"); }); }
+  else if (d.id === "arch"){ r(c,x-5,y-11,1,11,C.woodD); r(c,x+5,y-11,1,11,C.woodD); for (var a2=0;a2<11;a2++){ var ay2 = y - 11 - Math.round(3*Math.sin(a2/10*Math.PI)); r(c,x-5+a2,ay2,1,2,a2%3 ? C.leaf : C.pink); if (a2%4===1) r(c,x-5+a2,ay2-1,1,1,C.gold); } }
   else if (d.id === "maypole"){ r(c,x,y-18,1,18,C.woodL); r(c,x-1,y-19,3,1,C.gold); for (var k=0;k<5;k++){ r(c,x-1-k,y-17+k*3,1,2,[C.red,C.blue,C.gold,C.pink,C.leaf][k]); r(c,x+1,y-16+k*3,1,2,[C.pink,C.gold,C.red,C.blue,C.leaf][k]); } }
 }
 var ADVENTURES = [
@@ -1295,7 +1451,25 @@ var ADVENTURES = [
    souvenir:{id:"torii", name:"little red torii gate", x:130, y:127, souvenir:true}},
   {place:"Castle City", cost:10, party:[14,0,2], topic:"Making plans",
    story:"{p} saw the lights of Castle City and made friends with the castle cat, who promised to visit Kanamura one day.",
-   souvenir:{id:"koi", name:"carp streamer", x:70, y:127, souvenir:true}}
+   souvenir:{id:"koi", name:"carp streamer", x:70, y:127, souvenir:true}},
+  {place:"Snowy Pass", cost:8, party:[1,4,9], topic:"Weather and seasons",
+   story:"{p} crossed the Snowy Pass in a blizzard, sheltered in a mountain hut and built the biggest snow goblin anyone has ever seen.",
+   souvenir:{id:"snowstatue", name:"snow goblin statue", x:-346, y:127, souvenir:true}},
+  {place:"Lighthouse Isle", cost:8, party:[7,13,3], topic:"Asking the way",
+   story:"{p} rowed out to Lighthouse Isle, got lost three times and asked the kind keeper for directions every time.",
+   souvenir:{id:"anchor", name:"old ship's anchor", x:452, y:127, souvenir:true}},
+  {place:"Fishing Village", cost:10, party:[11,2,6], topic:"Cooking and tastes",
+   story:"{p} helped the Fishing Village cook a seaside feast and ate three helpings each.",
+   souvenir:{id:"fishflag", name:"paper fish lantern", x:532, y:127, souvenir:true}},
+  {place:"Bamboo Grove", cost:10, party:[5,10,14], topic:"Hobbies and likes",
+   story:"{p} spent a week in the Bamboo Grove playing flutes, painting and napping, then made a bamboo bench to bring home.",
+   souvenir:{id:"bamboobench", name:"bamboo bench", x:-286, y:127, souvenir:true}},
+  {place:"Festival Town", cost:12, party:[0,8,12], topic:"Making friends",
+   story:"{p} danced all night at the Festival Town summer festival, made a hundred new friends and won a big taiko drum.",
+   souvenir:{id:"taiko", name:"taiko drum", x:252, y:127, souvenir:true}},
+  {place:"Spirit Mountain", cost:12, party:[4,6,13], topic:"Health and feelings",
+   story:"{p} climbed misty Spirit Mountain, caught colds, got better with ginger tea and met a friendly fox spirit at the top.",
+   souvenir:{id:"foxstatue", name:"stone fox statue", x:-150, y:127, souvenir:true}}
 ];
 ADVENTURES.forEach(function(a){ DECOS.push(a.souvenir); });
 function villageDone(){ return prog && prog.next < 0; }
@@ -1310,7 +1484,17 @@ function advEvents(before, events){
   if (T0.started && T0.entry < 0) from = TIMELINE.length;
   function startEv(i){
     var e = TIMELINE[i];
-    if (e.adv !== undefined){ var a = ADVENTURES[e.adv]; events.push({kind:"done", text:"A new adventure! " + names(a.party) + " set off for the " + a.place + ". New phrases unlocked in the Phrases tab: " + a.topic + "."}); }
+    if (e.adv !== undefined){
+      var a = ADVENTURES[e.adv], un = [];
+      (window.GOBU_ADV_CATS || []).forEach(function(c){ if (c.adv === e.adv + 1) un.push("phrases for " + c.name.toLowerCase() + " (Phrases tab)"); });
+      (window.GOBU_ADV_KANJI || []).forEach(function(c){ if (c.adv === e.adv + 1) un.push("kanji for " + c.name.toLowerCase() + " (Kanji tab)"); });
+      if (e.adv === 6) events.push({kind:"done", text:"New lands! The Mountain Pass and the Harbour are now open. Swipe all the way left and right to see them."});
+      events.push({kind:"done", text:"A new adventure! " + names(a.party) + " set off for the " + a.place + "." + (un.length ? " Unlocked: " + un.join(" and ") + "." : "")});
+    }
+    else if (e.up !== undefined){
+      if (i === UPG_FROM) events.push({kind:"done", text:"Every building is finished! Now each one can be upgraded twice: first with stone paths and flower boxes, then with paper lanterns."});
+      events.push({kind:"progress", text:"Next project: a " + UPG_NAME[e.lv] + " for the " + ALLB[e.up].name + "."});
+    }
     else { var d = DISTRICT[e.b]; events.push({kind:"progress", text:"Next project: building the " + d.name + " in " + d.area + ". Swipe the village to see it."}); }
   }
   function doneEv(i){
@@ -1319,22 +1503,31 @@ function advEvents(before, events){
       var a = ADVENTURES[e.adv];
       if (tama.decos.indexOf(a.souvenir.id) < 0) tama.decos.push(a.souvenir.id);
       events.push({kind:"done", text:"Adventure complete! " + a.story.replace("{p}", names(a.party)) + " They brought back a " + a.souvenir.name + " for the village."});
+    } else if (e.up !== undefined){
+      events.push({kind:"done", text:"The " + ALLB[e.up].name + " got its " + UPG_NAME[e.lv] + (e.lv === 2 ? ": a stone path and boxes of flowers." : ": glowing paper lanterns.")});
     } else {
       var d = DISTRICT[e.b], here2 = d.res.filter(function(gi){ return here(goblins[gi]); });
       events.push({kind:"done", text:"The " + d.name + " in " + d.area + " is finished! " + (d.communal ? d.communal : here2.length ? names(here2) + (here2.length > 1 ? " move in." : " moves in.") : "It's ready for the next goblin who comes to live in " + cfg.name + ".")});
     }
   }
   if (!T0.started) startEv(0);
-  for (var i=from; i<to; i++){ doneEv(i); if (i+1 < TIMELINE.length) startEv(i+1); else events.push({kind:"done", text:"Every adventure and every building is complete. " + cfg.name + " is the happiest village in the land."}); }
+  for (var i=from; i<to; i++){ doneEv(i); if (i+1 < TIMELINE.length) startEv(i+1); else events.push({kind:"done", text:"Every adventure, building and upgrade is complete. " + cfg.name + " is the happiest village in the land."}); }
   if (to === from && T1.entry >= 0 && T1.done > (T0.started ? T0.done : 0)){
     var e2 = TIMELINE[T1.entry];
     if (e2.adv !== undefined) events.push({kind:"progress", text:"On the road to the " + ADVENTURES[e2.adv].place + ": " + T1.done + " of " + entryCost(e2) + " steps."});
+    else if (e2.up !== undefined) events.push({kind:"progress", text:"Work on the " + UPG_NAME[e2.lv] + " for the " + ALLB[e2.up].name + ": " + T1.done + " of " + entryCost(e2) + " steps."});
     else events.push({kind:"progress", text:"Work on the " + DISTRICT[e2.b].name + " in " + DISTRICT[e2.b].area + ": " + T1.done + " of " + entryCost(e2) + " steps."});
   }
   if (T1.entry < 0 && T0.started && T0.entry < 0 && T1.extra > T0.extra) events.push({kind:"deco", text:"The goblins planted more flowers around " + cfg.name + "."});
 }
 function drawSouvenir(c, d){
   var x = d.x, y = d.y;
+  if (d.id === "snowstatue"){ ell(c,x,y-3,4,3,"#f4f8fa"); ell(c,x,y-8,3,3,"#ffffff"); r(c,x-4,y-10,1,2,"#ffffff"); r(c,x+4,y-10,1,2,"#ffffff"); r(c,x-1,y-9,1,1,"#2a2116"); r(c,x+1,y-9,1,1,"#2a2116"); r(c,x,y-8,2,1,"#e8742c"); r(c,x-6,y-5,2,1,C.woodD); r(c,x+5,y-5,2,1,C.woodD); r(c,x-2,y-6,5,1,C.red); return; }
+  if (d.id === "anchor"){ r(c,x-1,y-11,3,1,"#4a4f56"); r(c,x-1,y-10,1,1,"#4a4f56"); r(c,x+1,y-10,1,1,"#4a4f56"); r(c,x,y-9,1,8,"#4a4f56"); r(c,x-2,y-7,5,1,"#4a4f56"); r(c,x-3,y-2,7,1,"#4a4f56"); r(c,x-4,y-3,1,1,"#4a4f56"); r(c,x+3,y-3,1,1,"#4a4f56"); r(c,x-5,y-4,1,1,"#4a4f56"); r(c,x+4,y-4,1,1,"#4a4f56"); return; }
+  if (d.id === "fishflag"){ r(c,x,y-14,1,14,C.woodD); r(c,x+1,y-13,6,3,C.red); r(c,x+7,y-14,1,5,C.red); r(c,x+2,y-12,1,1,"#ffffff"); r(c,x+4,y-12,2,1,C.redL); r(c,x+1,y-10,6,1,C.gold); return; }
+  if (d.id === "bamboobench"){ r(c,x-5,y-7,10,1,"#9dbb5a"); r(c,x-5,y-4,10,1,"#9dbb5a"); r(c,x-5,y-3,10,1,"#7f9c42"); r(c,x-5,y-7,1,7,"#7f9c42"); r(c,x+4,y-7,1,7,"#7f9c42"); r(c,x-1,y-7,1,4,"#7f9c42"); return; }
+  if (d.id === "taiko"){ r(c,x-4,y-1,1,1,C.woodD); r(c,x+4,y-1,1,1,C.woodD); ell(c,x,y-4,4,3,"#8a3a1f"); r(c,x-4,y-7,9,1,"#e9d8b0"); for (var k=-3;k<=3;k+=2) r(c,x+k,y-5,1,1,C.gold); r(c,x+5,y-9,1,4,C.woodL); return; }
+  if (d.id === "foxstatue"){ r(c,x-3,y-1,7,1,C.stoneD); ell(c,x,y-3,3,2,C.stone); ell(c,x,y-7,2,2,C.stone); r(c,x-2,y-10,1,2,C.stone); r(c,x+1,y-10,1,2,C.stone); r(c,x-2,y-5,4,1,C.red); r(c,x+3,y-5,2,3,C.stone); r(c,x+4,y-6,1,1,"#ffffff"); r(c,x-1,y-8,1,1,"#2a2116"); r(c,x+1,y-8,1,1,"#2a2116"); return; }
   if (d.id === "bigmush"){ r(c,x-1,y-6,3,6,C.cream); ell(c,x,y-8,5,3,"#8a4fa8"); r(c,x-3,y-9,1,1,"#e7d0ff"); r(c,x+2,y-8,1,1,"#e7d0ff"); r(c,x,y-10,1,1,"#e7d0ff"); }
   else if (d.id === "boat"){ r(c,x-6,y-3,12,2,C.wood); r(c,x-5,y-1,10,1,C.woodD); r(c,x-7,y-4,1,1,C.wood); r(c,x+6,y-4,1,1,C.wood); r(c,x-1,y-7,1,5,C.woodL); }
   else if (d.id === "cart"){ r(c,x-5,y-6,10,4,C.woodL); r(c,x-5,y-6,10,1,C.wood); r(c,x-4,y-7,2,1,C.red); r(c,x-1,y-7,2,1,C.red); r(c,x+2,y-7,2,1,C.red); r(c,x-3,y-2,2,2,C.woodD); r(c,x+2,y-2,2,2,C.woodD); r(c,x+5,y-5,3,1,C.woodD); }
@@ -1523,7 +1716,7 @@ function dailyProgress(perfect, events){
 }
 function requestDone(events){
   var q = todaysRequest(); if (!q || q.done) return;
-  tama.reqDay = dayKey(Date.now()); tama.mush += 5; Sfx.play("coin");
+  tama.reqDay = dayKey(Date.now()); tama.mush += 5; Sfx.play("coin"); questEvent("request", 1, events);
   var gift = giveDeco(false);
   events.push({kind:"done", text:q.g.name + " is delighted! +5 mushrooms" + (gift ? " and a " + gift + " for the village." : ".")});
   var now = performance.now(); q.g.say = pick(["Thank you so much!","We did it!","ありがとう!!"]); q.g.sayUntil = now + 4500; q.g.cheerUntil = now + 3000;
@@ -1538,6 +1731,7 @@ function act(a){
     if (tama.mush < 1){ buddySay("No mushrooms left. Finish a lesson to earn more!"); return; }
     if (need("food") > 95){ buddySay("I'm full!"); return; }
     tama.mush--; bump("food", 30); Sfx.play("nom"); bAnim = {kind:"eat", until:now+1600}; buddySay(pick(["Yum!","Mushroom! My favourite!","おいしい!","Nom nom nom"])); addXP(3);
+    var fq = sideEvent("feed", 1).filter(function(e){ return e.kind === "done"; }); if (fq.length) setTimeout(function(){ buddySay("Weekly quest done! +5 mushrooms and 2 build steps.", 3500); }, 1700);
   } else if (a === "bathe"){
     if (need("clean") > 92){ buddySay("Already sparkly!"); return; }
     bump("clean", 100); Sfx.play("splash"); bAnim = {kind:"bath", until:now+1800}; buddySay(pick(["So fresh!","Splish splash!","Bubbles!"])); addXP(2);
@@ -1561,9 +1755,13 @@ function chooseBuddy(gi){
 
 function init(c){
   cfg = c; steps = load(); prog = progressFor(steps);
-  goblins = c.goblins.concat(NEWCOMERS).concat(GUESTS).map(function(g,i){
+  goblins = c.goblins.concat(NEWCOMERS).concat(GUESTS).concat(NEWCOMERS2).map(function(g,i){
     return {i:i, name:g[0], base:g[0], trait:g[1], arrive:g[2] || 0, code:g[3] || null, guest:!!g[3], look:g[4] || null, skin:SKINS[i%SKINS.length], tunic:TUNICS[(i*3)%TUNICS.length], x:0, y:0, tx:0, ty:0, wait:Math.random()*3, phase:Math.random()*6, say:null, sayUntil:0, cheerUntil:0};
   });
+  var base2 = c.goblins.length + NEWCOMERS.length + GUESTS.length;
+  DISTRICT.forEach(function(d){ if (d.resOff) d.res = d.resOff.map(function(o){ return base2 + o; }); });
+  // adventures finished with steps carried over from an older version still leave their souvenir
+  for (var ai=0; ai<prog.tl.advDone; ai++){ var sv = ADVENTURES[ai].souvenir.id; if (tama.decos.indexOf(sv) < 0) tama.decos.push(sv); }
   goblins.forEach(function(g){ var p = restSpot(g); g.x = g.tx = p[0]; g.y = g.ty = p[1]; });
   applyNames();
   freshPlayer = !tama.tourDone && steps === 0 && tama.days === 0 && tama.gi < 0 && !(tama.decos && tama.decos.length);
@@ -1571,13 +1769,13 @@ function init(c){
   if (Date.now() - tama.lastSeen > 12*3600000 && hasBuddy()) greet = true;
   if (tama.greetDay !== dayKey(Date.now())){ tama.greetDay = dayKey(Date.now()); dayGreet = true; }
   tama.lastSeen = Date.now(); saveLocal();
-  injectCSS();
+  injectCSS(); injectCSS2();
   cloudSave = connectCloud();
 }
 function restSpot(g){
   var h = homeOf(g.i, prog);
   if (h < 0){
-    if (g.look === "runner") return [Math.round(-190 + Math.random()*555), 101 + Math.round(Math.random()*24)];
+    if (g.look === "runner") return [Math.round((chapter2Open() ? -390 : -190) + Math.random()*(chapter2Open() ? 955 : 555)), 101 + Math.round(Math.random()*24)];
     if (g.guest) return [Math.round(20 + Math.random()*160), 102 + Math.round(Math.random()*22)];
     var homeless = present().filter(function(x){ return homeOf(x.i,prog)<0 && !x.guest; });
     var k = homeless.indexOf(g), n = homeless.length, inner = Math.min(n, 7), ring = k < inner ? 0 : 1;
@@ -1586,19 +1784,20 @@ function restSpot(g){
     return [FIRE.x + Math.round(Math.cos(a)*rx), Math.min(126, FIRE.y + Math.round(Math.sin(a)*ry) + 2)];
   }
   var b = ALLB[h];
-  var front = b.y > 80, lo = b.x < 0 ? -196 : b.x >= 200 ? 204 : 4, hi = b.x < 0 ? -4 : b.x >= 200 ? 368 : W-4;
+  var reg = Math.floor((b.x - XL)/200), lo = XL + reg*200 + 4, hi = reg === 3 ? 368 : lo + 192, front = b.y > 80;
   var x = Math.max(lo, Math.min(hi, b.x + Math.round((Math.random()-0.5)*30))), y = front ? 102 + Math.round(Math.random()*22) : b.y + 3 + Math.round(Math.random()*16);
   if (Math.abs(x - FIRE.x) < 9 && y > 106) x += x < FIRE.x ? -12 : 12;
   return [x, y];
 }
 
-function addSteps(n, perfect){
+function applySteps(n, events, label){
   var before = progressFor(steps), beforeHouse = housedCount(before), beforeHap = happiness(before);
   steps += n; prog = progressFor(steps); saveLocal();
-  var events = [];
-  events.push({kind:"steps", text:"+" + n + " build step" + (n>1?"s":"") + (perfect ? " (perfect lesson bonus)" : "")});
+  events.push({kind:"steps", text:"+" + n + " build step" + (n>1?"s":"") + (label ? " (" + label + ")" : "")});
   var touched = -1;
   DISTRICT.forEach(function(d, j){ if (prog.tl.dBuilt[j] > before.tl.dBuilt[j]) touched = BUILDINGS.length + j; });
+  ALLB.forEach(function(b, j){ if (upLevel(j, prog) > upLevel(j, before)) touched = j; });
+  if (touched < 0 && prog.tl.entry >= 0 && TIMELINE[prog.tl.entry].up !== undefined) touched = TIMELINE[prog.tl.entry].up;
   BUILDINGS.forEach(function(b,i){
     if (prog.built[i] > before.built[i]){
       touched = i;
@@ -1614,8 +1813,6 @@ function addSteps(n, perfect){
     }
   });
   advEvents(before, events);
-  dailyProgress(perfect, events); saveLocal();
-  Sfx.play("hammer"); if (events.some(function(e){ return e.kind === "done"; })) Sfx.play("built");
   anim = {b:touched, from:touched>=0 ? builtOf(touched, before)/ALLB[touched].cost : 0, to:touched>=0 ? builtOf(touched, prog)/ALLB[touched].cost : 0, start:performance.now(), barFrom:barFrac(before), happyFrom:beforeHap};
   var nowMs = performance.now();
   goblins.forEach(function(g){ if (!here(g)) return; var p = restSpot(g); g.tx = p[0]; g.ty = p[1]; g.wait = 0.6 + Math.random(); g.cheerUntil = nowMs + 2600 + Math.random()*600; g.say = null; });
@@ -1630,6 +1827,18 @@ function addSteps(n, perfect){
     });
     nextChatter = nowMs + 5500;
   }
+}
+function addSteps(n, perfect, info){
+  info = info || {};
+  var events = [], newDay = tama.streakDay !== dayKey(Date.now());
+  applySteps(n, events, perfect ? "perfect lesson bonus" : "");
+  dailyProgress(perfect, events); saveLocal();
+  questEvent("lessons", 1, events); if (perfect) questEvent("perfect", 1, events);
+  if (info.app) questEvent("app_" + info.app, 1, events);
+  if (info.mode === "type" || info.mode === "listen") questEvent("recall", 1, events);
+  if (newDay) questEvent("days", 1, events);
+  afterProgress(events);
+  Sfx.play("hammer"); if (events.some(function(e){ return e.kind === "done"; })) Sfx.play("built");
   if (cloudSave) cloudSave();
   refreshAll();
   return events;
@@ -1757,7 +1966,7 @@ function avatar(g, mood){
 
 // ---------- scene ----------
 var buf = null, bctx = null;
-var XL = -200, WW = 600;
+var XL = -400, WW = 1000;
 var bgCanvas = null, bgCacheKey = "";
 function bgCtx(){ if (!bgCanvas){ bgCanvas = document.createElement("canvas"); bgCanvas.width = WW; bgCanvas.height = H; } var c = bgCanvas.getContext("2d"); c.setTransform(1,0,0,1,0,0); c.clearRect(0,0,WW,H); c.setTransform(1,0,0,1,-XL,0); return c; }
 function drawBackground(c, h, wk, sh, dark, sea, pink, bunt, ev){
@@ -1776,13 +1985,22 @@ function drawBackground(c, h, wk, sh, dark, sea, pink, bunt, ev){
   if (sea === "winter"){ ground = mix(ground,"#e4ebee",0.45); groundD = mix(groundD,"#c9d6dc",0.5); hill = mix(hill,"#dfe8ec",0.4); }
   else if (sea === "autumn"){ groundD = mix(groundD,"#c98a3a",0.55); hill = mix(hill,"#9a7a3a",0.3); }
   else if (sea === "spring"){ groundD = mix(groundD,"#e7a2c0",0.25); }
+  // mountains behind the Mountain Pass
+  var rock = mix("#6c7484","#7a8aa6",h), rockD = mix("#565d6b","#5f6f8c",h);
+  for (x=XL;x<-196;x++){
+    var fade = Math.min(1, (-196 - x)/30), my = Math.round(lerp(40, 8 + 10*Math.abs(Math.sin(x/23)) + 6*Math.abs(Math.sin(x/9+2)), fade));
+    r(c,x,my,1,42-my, ((x/3|0)%5===0) ? rockD : rock); if (my < 24) r(c,x,my,1,Math.min(4, 24-my),"#f2f6f8");
+  }
   for (var x=XL;x<XL+WW;x++){ var hy = 33 + Math.round(3*Math.sin(x/17) + 2*Math.sin(x/7+1)); r(c,x,hy,1,42-hy,hill); }
   r(c,XL,40,WW,H-40,ground);
+  // the sea behind the Harbour
+  var sea2 = mix("#4a6f8f","#3f86c4",h);
+  r(c,400,30,WW+XL-400,28,sea2); r(c,400,30,WW+XL-400,1,mix("#7d8794","#9fd0f0",sh)); r(c,400,57,WW+XL-400,3,C.stone); for (x=401;x<XL+WW;x+=4) r(c,x,59,2,1,C.stoneD);
   for (i=0;i<210;i++){ var gx = XL + Math.floor(rnd(i)*WW), gy = 41 + Math.floor(rnd(i+99)*58); r(c,gx,gy,1,1,groundD); r(c,gx-1,gy+1,3,1,groundD); }
-  [-192,-146,-96,-30,4,46,86,118,158,194,214,256,318,360].forEach(function(px,k){
+  [-392,-356,-318,-276,-232,-208,-192,-146,-96,-30,4,46,86,118,158,194,214,256,318,360].forEach(function(px,k){
     var ty = 25+(k%2)*3;
     tri(c,px,ty,4,13,mix("#3c5a3a","#2f7a40",h)); r(c,px-1,ty+13,2,3,C.woodD);
-    if (sea === "winter"){ r(c,px-1,ty,2,2,"#ffffff"); r(c,px-3,ty+6,2,1,"#ffffff"); r(c,px+2,ty+8,2,1,"#ffffff"); }
+    if (sea === "winter" || px < -200){ r(c,px-1,ty,2,2,"#ffffff"); r(c,px-3,ty+6,2,1,"#ffffff"); r(c,px+2,ty+8,2,1,"#ffffff"); }
     if (sea === "spring" || pink){ r(c,px-2,ty+5,1,1,C.pink); r(c,px+1,ty+8,1,1,C.pink); r(c,px,ty+3,1,1,"#f7c6d9"); if (pink){ r(c,px-3,ty+10,2,1,"#f7c6d9"); r(c,px+2,ty+6,1,1,C.pink); } }
     if (sea === "autumn"){ r(c,px-2,ty+6,1,1,"#e0702a"); r(c,px+2,ty+9,1,1,C.gold); }
   });
@@ -1800,6 +2018,7 @@ function drawBackground(c, h, wk, sh, dark, sea, pink, bunt, ev){
   }
   // locked districts
   if (!villageDone()){ [-100, 300].forEach(function(sx){ r(c,sx,80,1,10,C.woodD); r(c,sx-6,78,13,5,C.woodL); r(c,sx-5,80,11,1,C.woodD); }); }
+  if (!chapter2Open()){ [-300, 500].forEach(function(sx){ r(c,sx,80,1,10,C.woodD); r(c,sx-6,78,13,5,C.woodL); r(c,sx-5,80,11,1,C.woodD); r(c,sx-12,84,25,1,C.woodD); }); }
   // bunting
   if (bunt){
     for (x=XL+2;x<372;x++){ var sy = 64 + Math.round(4*Math.sin((((x%50)+50)%50)/50*Math.PI)); if (x%2===0) r(c,x,sy,1,1,C.woodD); if (((x%5)+5)%5===0) r(c,x,sy+1,2,2,[C.red,C.gold,C.blue,C.pink][(((x/5|0)%4)+4)%4]); }
@@ -1818,7 +2037,7 @@ function drawScene(t){
   var wk = wxKind(), sh = {clear:1, partly:0.85, cloudy:0.45, fog:0.4, drizzle:0.35, rain:0.25, snow:0.45, thunder:0.12}[wk];
   var dark = darkness(), sea = season(), pink = (ev && ev.id === "hanami") || hasSecret("SAKURA");
   var bunt = prog.built[BUILDINGS.length-1] === BUILDINGS[BUILDINGS.length-1].cost || festivalNow() || (ev && ev.id === "natsu");
-  var bgKey = [wk, Math.round(h*25), Math.round(dark*20), sea, pink, villageDone(), bunt, Math.min(prog.tl.extra, 30), ev ? ev.id : ""].join("|");
+  var bgKey = [wk, Math.round(h*25), Math.round(dark*20), sea, pink, villageDone(), chapter2Open(), bunt, Math.min(prog.tl.extra, 30), ev ? ev.id : ""].join("|");
   if (bgKey !== bgCacheKey){ bgCacheKey = bgKey; drawBackground(bgCtx(), h, wk, sh, dark, sea, pink, bunt, ev); }
   c.setTransform(1,0,0,1,0,0); c.drawImage(bgCanvas, 0, 0); c.setTransform(1,0,0,1,-XL,0);
   // live sky: stars, fireworks, clouds, river ripples
@@ -1835,6 +2054,11 @@ function drawScene(t){
     ell(c,cx,cy,8,2,col); ell(c,cx+6,cy-1,5,2,col); ell(c,cx-5,cy,4,1,col);
   }
   if (inView(380)) for (i=0;i<10;i++){ var wy = 42 + ((i*11 + Math.floor(t*6)) % 84); r(c,377+(i*7)%20,wy,3,1,"#9fd0f0"); }
+  if (inView(500, 100)){
+    for (i=0;i<16;i++){ var wx = 402 + ((i*37 + Math.floor(t*4)) % 196), wy2 = 33 + (i*7)%22; if (Math.sin(t*2+i) > 0) r(c,wx,wy2,3,1,"#9fd0f0"); }
+    [[0, 44, C.red], [1, 51, C.cream]].forEach(function(bt){ var bx = 410 + ((t*(bt[0] ? 5 : 3) + bt[0]*90) % 180), by = bt[1] + Math.round(Math.sin(t*1.6 + bt[0]*2)); r(c,bx-5,by,10,2,C.wood); r(c,bx-4,by+2,8,1,C.woodD); r(c,bx,by-7,1,7,C.woodD); r(c,bx+1,by-6,4,5,bt[2]); });
+    for (i=0;i<3;i++){ var gx3 = 420 + ((t*(8+i*3) + i*60) % 170), gy3 = 14 + i*5 + Math.round(Math.sin(t*3+i)*2), fl = Math.sin(t*8+i) > 0 ? 1 : 0; r(c,gx3-2,gy3-fl,2,1,"#ffffff"); r(c,gx3+1,gy3-fl,2,1,"#ffffff"); r(c,gx3,gy3,1,1,"#ffffff"); }
+  }
   // drawables sorted by baseline
   var items = [];
   ALLB.forEach(function(b,i){ if (inView(b.x, b.w)) items.push({y:b.y, f:function(){ drawBuilding(c,b,i,now,t); }}); });
@@ -1858,6 +2082,7 @@ function drawScene(t){
       if (builtOf(i,p) !== b.cost || (!b.res.length && !b.communal)) return;
       var sp = sprite(b), left = b.x - Math.floor(b.w/2), top = b.y - b.h;
       (sp.glass||[]).forEach(function(q){ r(c,left+q[0],top+q[1],1,1,"#ffe58a"); });
+      if (upLevel(i,p) >= 3){ var gy = top + Math.max(3, Math.round(b.h*0.3)) + 1; c.globalAlpha = 0.22*dark; ell(c,left-1,gy,4,3,"#ffb347"); ell(c,left+b.w-1,gy,4,3,"#ffb347"); c.globalAlpha = dark; }
       if (night && b.res.length){ var ph = (t*0.5 + i*0.37) % 1; c.globalAlpha = dark*(1-ph); var zx = b.x + 3 + Math.round(Math.sin(ph*5)*2), zy = top - 2 - Math.round(ph*8); r(c,zx,zy,3,1,"#e8ecff"); r(c,zx+1,zy+1,1,1,"#e8ecff"); r(c,zx,zy+2,3,1,"#e8ecff"); c.globalAlpha = dark; }
     });
     DECOS.forEach(function(d){ if (d.light && tama.decos.indexOf(d.id) >= 0){ c.globalAlpha = dark; r(c,d.x+d.light[0],d.y+d.light[1],1,1,"#ffe58a"); c.globalAlpha = 0.18*dark; ell(c,d.x,d.y+d.light[1],4,3,"#ffd27a"); } });
@@ -1927,11 +2152,21 @@ function drawBuilding(c, b, i, now, tt){
     for (var a=0;a<4;a++){ var ang = t*1.2 + a*Math.PI/2; for (var d=2; d<10; d++){ r(c, Math.round(hx + Math.cos(ang)*d), Math.round(hy + Math.sin(ang)*d), 1, 1, d > 4 ? C.cream : C.woodD); } }
     r(c,hx-1,hy-1,2,2,C.woodD);
   }
-  var chim = {stone:15, tavern:20, thatch:15, stump:14, bakery:16, cottageA:13, cottageB:13, cottageC:15, boathouse:15}[b.id];
+  var chim = {stone:15, tavern:20, thatch:15, stump:14, bakery:16, cottageA:13, cottageB:13, cottageC:15, boathouse:15, lodge:15, forge:17, cabin:4, inn:17, hcottage:13}[b.id];
   if (chim){
     for (var s2=0;s2<3;s2++){ var ph = (t*0.6 + s2/3) % 1; c.globalAlpha = 0.6*(1-ph); r(c, left + chim + Math.round(Math.sin(ph*6+s2)*2), top - 1 - Math.round(ph*10), 2, 2, "#e8e8e8"); }
     c.globalAlpha = 1;
   }
+  var lv = upLevel(i, prog);
+  if (lv >= 2){ // stone path and flower boxes
+    r(c,left-1,b.y-1,b.w+2,2,C.stone); for (var sx=left; sx<left+b.w; sx+=3) r(c,sx,b.y,1,1,C.stoneD);
+    [left-1, left+b.w-2].forEach(function(fx, k){ r(c,fx,b.y-3,3,2,C.woodD); r(c,fx,b.y-4,1,1,k ? C.gold : C.pink); r(c,fx+2,b.y-4,1,1,k ? C.pink : C.gold); r(c,fx+1,b.y-5,1,1,"#ffffff"); });
+  }
+  if (lv >= 3){ // paper lanterns
+    var ly = top + Math.max(3, Math.round(b.h*0.3));
+    [left - 1, left + b.w - 1].forEach(function(lx, k){ r(c,lx,ly-1,1,1,C.woodD); r(c,lx-1,ly,3,3,C.red); r(c,lx-1,ly,3,1,C.gold); r(c,lx,ly+1,1,1,"#ffb070"); });
+  }
+  if (b.id === "lighthouse" && darkness() > 0.3){ var ang = t*1.4, bx = left + 7, by = top + 5; c.globalAlpha = 0.35; for (var d2=4; d2<26; d2++) r(c, Math.round(bx + Math.cos(ang)*d2), Math.round(by + Math.sin(ang)*d2*0.25), 2, 1, "#fff2b0"); c.globalAlpha = 1; }
   if (b.id === "lantern" && ((currentEvent() && currentEvent().id === "hanami") || hasSecret("SAKURA"))){
     for (var q=0;q<26;q++) r(c, left + 2 + Math.floor(rnd(q+40)*22), top + 1 + Math.floor(rnd(q+60)*15), 2, 1, q%3 ? "#f7b7cf" : "#ee9ab9");
   }
@@ -1994,29 +2229,37 @@ function syncBubbles(p, now){
 }
 function stopX(i){ return 12 + i*29; }
 function pathY(x){ return 22 + Math.round(3*Math.sin(x/13)); }
+function mapBase(A){ return A.idx >= 6 ? 6 : 0; }
 function drawMap(p, t){
-  var cv = p.el.querySelector(".v-map"), c = cv.getContext("2d"), A = advState();
+  var cv = p.el.querySelector(".v-map"), c = cv.getContext("2d"), A0 = advState(), base = mapBase(A0), A = {idx:A0.idx - base, done:A0.done, moving:A0.moving, extra:A0.extra, base:base};
   c.imageSmoothingEnabled = false;
   r(c,0,0,200,36,"#efe1bd"); for (var i=0;i<30;i++) r(c,Math.floor(rnd(i+70)*200),Math.floor(rnd(i+90)*36),1,1,"#e2d1a6");
-  for (var x=stopX(0); x<=stopX(ADVENTURES.length); x+=3) r(c,x,pathY(x),2,1, x < markerX(A) ? "#8a5a33" : "#c4a978");
+  for (var x=stopX(0); x<=stopX(6); x+=3) r(c,x,pathY(x),2,1, x < markerX(A) ? "#8a5a33" : "#c4a978");
   // stops
-  for (i=0;i<=ADVENTURES.length;i++){
+  for (i=0;i<=6;i++){
     var sx = stopX(i), sy = pathY(sx) - 3, reached = i === 0 || i <= A.idx;
-    drawStop(c, i, sx, sy);
+    drawStop(c, i === 0 ? 0 : i + base, sx, sy);
     if (i > 0 && i <= A.idx){ r(c,sx+4,sy-7,1,5,"#5e3b20"); r(c,sx+5,sy-7,3,2,"#d0462f"); }
     if (i === A.idx + 1 && Math.sin(t*4) > 0){ r(c,sx-5,sy-8,1,1,"#fff6b0"); r(c,sx+5,sy-9,1,1,"#fff6b0"); }
   }
   // party marker
   if (A.moving){
-    var mx = markerX(A), my = pathY(Math.round(mx)) - 2, party = ADVENTURES[A.idx].party;
+    var mx = markerX(A), my = pathY(Math.round(mx)) - 2, party = ADVENTURES[A.idx + base].party;
     party.forEach(function(gi,k){ var gx = Math.round(mx) - 4 + k*3, bob = Math.round(Math.abs(Math.sin(t*6 + k))); r(c,gx,my-3-bob,2,2,goblins[gi].skin); r(c,gx,my-1-bob,2,1,goblins[gi].tunic); });
   }
+  if (base){ r(c,186,2,12,7,"#efe1bd"); r(c,188,3,1,5,"#5a3d22"); r(c,191,3,1,5,"#5a3d22"); r(c,194,3,1,5,"#5a3d22"); r(c,195,3,1,5,"#5a3d22"); } // "II": second map
   r(c,0,0,200,1,"#5a3d22"); r(c,0,35,200,1,"#5a3d22"); r(c,0,0,1,36,"#5a3d22"); r(c,199,0,1,36,"#5a3d22");
 }
-function markerX(A){ if (A.idx >= ADVENTURES.length) return stopX(ADVENTURES.length); return lerp(stopX(A.idx), stopX(A.idx+1), A.done/ADVENTURES[A.idx].cost); }
+function markerX(A){ if (A.idx >= 6 || A.idx + (A.base||0) >= ADVENTURES.length) return stopX(6); return lerp(stopX(A.idx), stopX(A.idx+1), A.done/ADVENTURES[A.idx + (A.base||0)].cost); }
 function drawStop(c, i, x, y){
   if (i === 0){ tri(c,x,y-6,4,3,C.thatch); r(c,x-3,y-3,6,4,C.mud); r(c,x-1,y-1,2,2,C.door); return; }
-  var id = ["","forest","inn","market","onsen","shrine","castle"][i];
+  var id = ["","forest","inn","market","onsen","shrine","castle","pass","isle","fishing","bamboo","festival","spirit"][i];
+  if (id === "pass"){ tri(c,x,y-9,6,8,"#7a8aa6"); tri(c,x,y-9,2,3,"#ffffff"); r(c,x-2,y-1,4,1,"#ffffff"); return; }
+  if (id === "isle"){ ell(c,x,y,5,2,C.water); r(c,x-1,y-8,3,7,C.cream); r(c,x-1,y-6,3,2,C.red); r(c,x-1,y-9,3,1,C.glass); return; }
+  if (id === "fishing"){ r(c,x-5,y,10,1,C.water); r(c,x-3,y-2,6,2,C.wood); r(c,x,y-7,1,5,C.woodD); r(c,x+1,y-6,3,3,C.cream); r(c,x-4,y-4,3,1,"#9fb8c8"); return; }
+  if (id === "bamboo"){ for (var k=-3;k<=3;k+=2){ r(c,x+k,y-8,1,9,"#7f9c42"); r(c,x+k,y-5,1,1,"#9dbb5a"); } r(c,x+1,y-9,2,1,"#9dbb5a"); return; }
+  if (id === "festival"){ for (var k2=-4;k2<=4;k2+=2) r(c,x+k2,y-7+Math.abs(k2)/2,2,2,k2%4 ? C.red : C.gold); ell(c,x,y-1,3,2,"#8a3a1f"); r(c,x-3,y-3,7,1,"#e9d8b0"); return; }
+  if (id === "spirit"){ tri(c,x,y-9,6,8,"#8a7fb0"); r(c,x-3,y-4,1,4,C.red); r(c,x+2,y-4,1,4,C.red); r(c,x-4,y-5,8,1,C.red); r(c,x-6,y-7,2,1,"#e7d0ff"); r(c,x+5,y-6,2,1,"#e7d0ff"); return; }
   if (id === "forest"){ r(c,x-1,y-2,2,3,C.cream); ell(c,x,y-4,3,2,"#8a4fa8"); r(c,x-4,y-6,1,6,"#2f6b3a"); r(c,x+4,y-7,1,7,"#2f6b3a"); }
   else if (id === "inn"){ tri(c,x,y-7,4,3,C.slate); r(c,x-3,y-4,6,4,C.cream); r(c,x-1,y-2,2,2,C.door); r(c,x-6,y+1,12,1,C.water); }
   else if (id === "market"){ for (var k=0;k<4;k++) r(c,x-4+k*2,y-6,2,2,k%2?C.cream:C.red); r(c,x-4,y-4,8,4,C.woodL); r(c,x-3,y-3,2,1,C.gold); }
@@ -2036,7 +2279,7 @@ function mount(el, opts){
     '<canvas class="v-map" width="200" height="36"></canvas>' +
     '<div class="v-next"><span class="v-nexttext"></span><span class="v-count"></span></div><div class="v-bar"><i></i></div>' +
     '<button class="v-toggle"></button><div class="v-roster"></div>';
-  var p = {el:el, canvas:el.querySelector("canvas"), opts:opts, open:false, cam:200, camT:200};
+  var p = {el:el, canvas:el.querySelector("canvas"), opts:opts, open:false, cam:400, camT:400};
   p.canvas.addEventListener("click", function(e){ if (p.swiped){ p.swiped = false; return; } tapCanvas(p, e); });
   p.canvas.addEventListener("pointerdown", function(e){ p.downX = e.clientX; p.downY = e.clientY; });
   p.canvas.addEventListener("pointerup", function(e){ if (p.downX == null) return; var dx = e.clientX - p.downX, dy = e.clientY - p.downY; p.downX = null; if (Math.abs(dx) > 30 && Math.abs(dx) > Math.abs(dy)){ p.swiped = true; pan(p, dx < 0 ? 1 : -1); } });
@@ -2048,14 +2291,16 @@ function mount(el, opts){
   return p;
 }
 function refresh(){ panels.forEach(updatePanel); ensureRunning(); }
-var AREAS = ["The Fields", "Kanamura", "Riverside"];
-function pan(p, d){ var idx = Math.max(0, Math.min(2, Math.round(p.camT/200) + d)); if (idx*200 !== p.camT) Sfx.play("whoosh"); p.camT = idx*200; updateArea(p); ensureRunning(); }
-function focusOn(p, x){ var idx = x < 0 ? 0 : x >= 200 ? 2 : 1; p.camT = idx*200; if (p.opts.results) p.cam = p.camT; updateArea(p); }
+var AREAS = ["The Mountain Pass", "The Fields", "Kanamura", "Riverside", "The Harbour"];
+function pan(p, d){ var idx = Math.max(0, Math.min(4, Math.round(p.camT/200) + d)); if (idx*200 !== p.camT) Sfx.play("whoosh"); p.camT = idx*200; updateArea(p); ensureRunning(); }
+function focusOn(p, x){ var idx = Math.max(0, Math.min(4, Math.floor((x - XL)/200))); p.camT = idx*200; if (p.opts.results) p.cam = p.camT; updateArea(p); }
 function updateArea(p){
   var idx = Math.round(p.camT/200), a = p.el.querySelector(".v-area");
-  a.textContent = idx === 1 ? (villageDone() ? "Kanamura" : "Kanamura · swipe to explore") : AREAS[idx] + (villageDone() ? "" : " · opens when the village is finished");
+  a.textContent = idx === 2 ? (villageDone() ? "Kanamura" : "Kanamura · swipe to explore") :
+    (idx === 1 || idx === 3) ? AREAS[idx] + (villageDone() ? "" : " · opens when the village is finished") :
+    AREAS[idx] + (chapter2Open() ? "" : " · opens after the sixth adventure");
   p.el.querySelector(".v-pan.l").style.visibility = idx === 0 ? "hidden" : "";
-  p.el.querySelector(".v-pan.r").style.visibility = idx === 2 ? "hidden" : "";
+  p.el.querySelector(".v-pan.r").style.visibility = idx === 4 ? "hidden" : "";
 }
 function updatePanel(p){
   var el = p.el, pr = prog, hap = happiness(pr), housed = housedCount(pr);
@@ -2069,10 +2314,10 @@ function updatePanel(p){
     var T = pr.tl;
     if (T.entry >= 0){
       var e = TIMELINE[T.entry];
-      el.querySelector(".v-nexttext").textContent = e.adv !== undefined ? "Adventure: " + names(ADVENTURES[e.adv].party) + " are off to the " + ADVENTURES[e.adv].place : "Building the " + DISTRICT[e.b].name + " in " + DISTRICT[e.b].area;
+      el.querySelector(".v-nexttext").textContent = entryLabel(e);
       el.querySelector(".v-count").textContent = T.done + " / " + entryCost(e);
     } else {
-      el.querySelector(".v-nexttext").textContent = "Everything is built and every adventure is done. Each lesson now plants flowers.";
+      el.querySelector(".v-nexttext").textContent = "Everything is built, upgraded and every adventure is done. Each lesson now plants flowers.";
       el.querySelector(".v-count").textContent = "";
     }
   }
@@ -2390,23 +2635,28 @@ function startQuiz(){
 }
 
 // ---------- Today panel ----------
-function mountToday(el){
+function mountToday(el, part){
+  part = part || "all"; el.setAttribute("data-part", part);
   el.innerHTML =
-    '<div class="t-head"><b>Today in ' + cfg.name + '</b><span class="t-date"></span></div>' +
+    '<div class="t-head"><b>' + (part === "goals" ? "This week" : part === "buddy" ? "Postcards" : "Today in " + cfg.name) + '</b><span class="t-date"></span></div>' +
     '<div class="t-greet"></div>' +
     '<div class="t-req"><div class="t-av"></div><div class="t-rtext"><b class="t-rname"></b><span class="t-rbody"></span></div><button class="t-rbtn"></button></div>' +
+    '<button class="t-start">Start a lesson</button>' +
     '<div class="t-row"><button class="t-quick"><b>Quick quest</b><small>5 cards, about a minute</small></button>' +
     '<div class="t-fest"><b>Festival</b><span class="t-dots"></span><small class="t-ftext"></small></div></div>' +
+    '<div class="t-rank"></div><div class="t-quests"></div>' +
     '<div class="t-foot"><span class="t-days"></span><button class="t-cards"></button></div>' +
-    '<div class="t-links"><button class="t-progress">Your progress</button><button class="t-howto">How to play</button><button class="t-backup">Back up or move progress</button><button class="t-feedback">Send feedback</button><button class="t-secret">Secret code</button></div>' +
+    '<div class="t-links"><button class="t-stamps">Stamp book</button><button class="t-progress">Your progress</button><button class="t-howto">How to play</button><button class="t-backup">Back up or move progress</button><button class="t-feedback">Send feedback</button><button class="t-secret">Secret code</button></div>' +
     '<div class="t-album"></div>';
-  var p = {el:el, album:false};
+  var p = {el:el, album:part === "buddy", part:part};
+  el.querySelector(".t-start").onclick = function(){ if (cfg.learn) cfg.learn(); };
   el.querySelector(".t-quick").onclick = function(){ if (cfg.quick) cfg.quick(); };
   el.querySelector(".t-rbtn").onclick = function(){ var q = todaysRequest(); if (q && !q.done && cfg.startRequest) cfg.startRequest(q.req); };
-  el.querySelector(".t-cards").onclick = function(){ p.album = !p.album; updateToday(p); };
+  el.querySelector(".t-cards").onclick = function(){ if (p.part === "buddy") return; p.album = !p.album; updateToday(p); };
   el.querySelector(".t-secret").onclick = openSecret;
   el.querySelector(".t-howto").onclick = function(){ if (cfg.tour) startTour(cfg.tour()); };
   el.querySelector(".t-progress").onclick = function(){ if (cfg.progress) cfg.progress(); };
+  el.querySelector(".t-stamps").onclick = openStampBook;
   el.querySelector(".t-backup").onclick = openBackup;
   el.querySelector(".t-feedback").onclick = openFeedback;
   todayPanels = todayPanels.filter(function(x){ return x.el !== el; }); todayPanels.push(p);
@@ -2424,6 +2674,12 @@ function updateToday(p){
     var bt = el.querySelector(".t-rbtn"); bt.textContent = q.done ? "Done" : "Help " + q.g.name; bt.disabled = q.done;
     el.querySelector(".t-req").classList.toggle("done", q.done);
   }
+  var rl = rankLine();
+  el.querySelector(".t-rank").innerHTML = '<b>Rank: ' + rl.name + '</b><span class="t-rbar"><i style="width:' + Math.round(rl.frac*100) + '%"></i></span><small>' + (rl.next ? rl.need + " renown to " + rl.next.toLowerCase() : "Top rank!") + '</small>';
+  el.querySelector(".t-rank").title = "Renown " + rl.renown + ": build steps, stamps, weekly quests and spirit friends all count";
+  var W2 = weekQuests(), qh = '<div class="t-qh"><b>Weekly quests</b><small>' + (W2.bonus ? "All done! New quests on Monday" : "+5 mushrooms and 2 build steps each") + '</small></div>';
+  W2.ids.forEach(function(id, k){ var q = QUESTS[id]; qh += '<div class="t-q' + (W2.done[k] ? " done" : "") + '"><span>' + q.text + '</span><small>' + (W2.done[k] ? "Done" : W2.prog[k] + "/" + q.n) + '</small><span class="t-qbar"><i style="width:' + Math.round(100*W2.prog[k]/q.n) + '%"></i></span></div>'; });
+  el.querySelector(".t-quests").innerHTML = qh;
   var wk = weekKey(Date.now()), n = tama.week === wk ? tama.weekDays.length : 0, fest = festivalNow();
   el.querySelector(".t-dots").innerHTML = [0,1,2,3].map(function(i){ return '<i class="' + (fest || i < n ? "on" : "") + '"></i>'; }).join("");
   el.querySelector(".t-ftext").textContent = fest ? "Festival week! The goblins are celebrating." : "Practise on 4 days this week (" + n + " so far)";
@@ -2441,7 +2697,7 @@ function updateToday(p){
       var fr = document.createElement("small"); fr.textContent = "From " + g.name + ", day " + (7*(ci+1)); card.appendChild(fr);
       al.appendChild(card);
     });
-    if (tama.cardNew){ tama.cardNew = false; saveLocal(); if (cloudSave) cloudSave(); cb.textContent = "Postcards " + tama.cards.length + "/" + POSTCARDS.length; cb.classList.remove("new"); }
+    if (tama.cardNew && el.offsetParent !== null){ tama.cardNew = false; saveLocal(); if (cloudSave) cloudSave(); cb.textContent = "Postcards " + tama.cards.length + "/" + POSTCARDS.length; cb.classList.remove("new"); }
   }
 }
 // ---------- welcome tour ----------
@@ -2453,13 +2709,13 @@ function startTour(stepsList){
   var lit = null;
   function show(){
     if (lit) lit.classList.remove("tour-hi");
-    var st = stepsList[i]; lit = st.el ? document.querySelector(st.el) : null;
+    var st = stepsList[i]; if (st.view && cfg.showView) cfg.showView(st.view); lit = st.el ? document.querySelector(st.el) : null;
     if (lit){ lit.classList.add("tour-hi"); try{ lit.scrollIntoView({block:"center", behavior:"smooth"}); }catch(e){ lit.scrollIntoView(); } }
     ov.querySelector(".tour-text").textContent = st.text.replace("{name}", guide.name);
     ov.querySelector(".tour-dots").innerHTML = stepsList.map(function(_,k){ return '<i class="' + (k === i ? "on" : "") + '"></i>'; }).join("");
     ov.querySelector(".tour-next").textContent = i === stepsList.length - 1 ? "Let's go!" : "Next";
   }
-  function end(){ if (lit) lit.classList.remove("tour-hi"); ov.remove(); tama.tourDone = true; persist(); window.scrollTo(0,0); }
+  function end(){ if (lit) lit.classList.remove("tour-hi"); ov.remove(); tama.tourDone = true; persist(); if (cfg.showView) cfg.showView("village"); window.scrollTo(0,0); }
   ov.querySelector(".tour-next").onclick = function(){ if (i < stepsList.length - 1){ i++; show(); } else end(); };
   ov.querySelector(".tour-skip").onclick = end;
   show();
@@ -2615,7 +2871,177 @@ function drawPostcard(cv, pc, g){
   else if (pc.prop === "mug"){ r(c,x-1,y-4,3,4,C.gold); r(c,x-1,y-5,3,1,"#ffffff"); r(c,x+2,y-3,1,2,C.gold); }
 }
 
-return {daysPractised:function(){ return tama ? tama.days : 0; }, isFresh:function(){ return freshPlayer; }, startTour:function(st){ startTour(st || cfg.tour()); }, cfgTour:function(){ return cfg.tour(); }, init:init, mount:mount, mountBuddy:mountBuddy, mountToday:mountToday, requestDone:requestDone, advUnlocked:function(){ return prog ? advUnlocked() : 0; }, refresh:refresh, addSteps:addSteps, showEvents:showEvents, total:TOTAL};
+// ---------- stamp book: bronze, silver and gold stamps for every kana, kanji and phrase ----------
+// bronze = right 2 times; silver = right 6 times with 80% correct; gold = silver and typed or heard right twice (Type it / Listen)
+function stampOf(s, rc){ if (!s || s.c < 2) return 0; var acc = s.c/(s.c + s.w); if (s.c >= 6 && acc >= 0.8) return (rc || 0) >= 2 ? 3 : 2; return 1; }
+var STAMP_APPS = [{id:"h", name:"Hiragana"}, {id:"k", name:"Katakana"}, {id:"j", name:"Kanji"}, {id:"p", name:"Phrases"}];
+function stampData(){
+  var apps = window.GobuApps || {}, out = {b:0, s:0, g:0, total:0, pages:[]};
+  STAMP_APPS.forEach(function(A){
+    var a = apps[A.id]; if (!a || !a.pages) return;
+    var st = a.stats() || {}, rc = a.rcItems ? a.rcItems() : {};
+    a.pages().forEach(function(pg){
+      var seen = {}, items = [], lv = [];
+      pg.items.forEach(function(it){ if (seen[it.k]) return; seen[it.k] = 1; var l = stampOf(st[it.k], rc[it.k]); items.push(it); lv.push(l); });
+      if (!pg.locked) lv.forEach(function(l){ out.total++; if (l >= 1) out.b++; if (l >= 2) out.s++; if (l >= 3) out.g++; });
+      out.pages.push({app:A.id, appName:A.name, id:pg.id, name:pg.name, items:items, lv:lv, min:lv.length ? Math.min.apply(null, lv) : 0, locked:!!pg.locked});
+    });
+  });
+  return out;
+}
+function checkStamps(events){
+  if (!window.GobuApps) return;
+  var d = stampData(), now = [d.b, d.s, d.g], first = !tama.stampN;
+  tama.pages = tama.pages || {};
+  var old = tama.stampN || now, gained = [now[0]-old[0], now[1]-old[1], now[2]-old[2]];
+  tama.stampN = now;
+  var words = [];
+  if (gained[0] > 0) words.push(gained[0] + " bronze"); if (gained[1] > 0) words.push(gained[1] + " silver"); if (gained[2] > 0) words.push(gained[2] + " gold");
+  if (words.length) events.push({kind:"progress", text:"New stamps in your stamp book: " + words.join(", ") + "."});
+  var pts = Math.max(0, gained[0]) + Math.max(0, gained[1]) + Math.max(0, gained[2]);
+  var silverPages = [], goldPages = [], gifts = [], bonus = 0;
+  d.pages.forEach(function(pg){
+    if (pg.locked || !pg.items.length) return;
+    var had = tama.pages[pg.id] || 0;
+    if (pg.min >= 2 && had < 2){ tama.pages[pg.id] = 2; tama.mush += 10; var gname = giveDeco(false); if (gname) gifts.push(gname); silverPages.push(pg.appName + ": " + pg.name); }
+    if (pg.min >= 3 && (tama.pages[pg.id] || 0) < 3){ tama.pages[pg.id] = 3; bonus += 3; goldPages.push(pg.appName + ": " + pg.name); }
+  });
+  if (silverPages.length) events.push({kind:"done", text:(first ? "Your stamp book is ready! You've already filled " : "Stamp page filled with silver: ") + silverPages.join(", ") + ". +" + (10*silverPages.length) + " mushrooms" + (gifts.length ? " and a " + gifts.join(", a ") + " for the village." : ".")});
+  if (goldPages.length) events.push({kind:"done", text:"Gold stamp page" + (goldPages.length > 1 ? "s" : "") + ": " + goldPages.join(", ") + "! The goblins are so impressed they build extra fast."});
+  if (bonus) applySteps(bonus, events, "gold stamp page");
+  if (!first && pts) questEvent("stamps", pts, events);
+}
+function openStampBook(){
+  var d = stampData(), html = '<div class="pg-box"><div class="pg-head"><b>Stamp book</b><button class="pg-close" aria-label="Close">×</button></div>' +
+    '<div class="pg-sum st-sum"><div><b class="st1">' + (d.b - d.s) + '</b><span>bronze</span></div><div><b class="st2">' + (d.s - d.g) + '</b><span>silver</span></div><div><b class="st3">' + d.g + '</b><span>gold</span></div></div>' + '<p class="pg-note">' + d.b + ' of ' + d.total + ' unlocked items have at least one stamp.</p>' +
+    '<p class="pg-note">Every kana, kanji and phrase can earn three stamps. Bronze: answered right 2 times. Silver: right 6 times, with 80% or more correct. Gold: silver, then typed or heard right twice in Type it or Listen. Fill a page with silver for 10 mushrooms and a village decoration; fill it with gold for 3 build steps.</p>';
+  var lastApp = "";
+  d.pages.forEach(function(pg){
+    if (pg.app !== lastApp){ lastApp = pg.app; html += '<h3>' + pg.appName + '</h3>'; }
+    var nS = pg.lv.filter(function(l){ return l >= 2; }).length, nG = pg.lv.filter(function(l){ return l >= 3; }).length, had = tama.pages && tama.pages[pg.id] || 0;
+    html += '<div class="st-page' + (pg.locked ? ' locked' : '') + '"><div class="st-ph"><b>' + pg.name + '</b><span>' + (pg.locked ? 'Unlocks on an adventure' : nS + '/' + pg.items.length + ' silver · ' + nG + ' gold' + (had >= 3 ? ' · gold page!' : had >= 2 ? ' · silver page!' : '')) + '</span></div>';
+    if (!pg.locked) html += '<div class="pg-grid">' + pg.items.map(function(it, k){ var l = pg.lv[k]; return '<span class="pg-cell st-c' + l + '" title="' + (it.en || it.r) + '">' + it.k + '</span>'; }).join("") + '</div>';
+    html += '</div>';
+  });
+  html += '</div>';
+  var ov = document.createElement("div"); ov.className = "s-overlay pg-overlay"; ov.innerHTML = html; document.body.appendChild(ov);
+  ov.querySelector(".pg-close").onclick = function(){ ov.remove(); };
+  ov.addEventListener("click", function(e){ if (e.target === ov) ov.remove(); });
+}
+
+// ---------- weekly quests ----------
+var QUESTS = {
+  lessons:{n:5, text:"Finish 5 lessons"}, perfect:{n:2, text:"Finish 2 perfect lessons"}, days:{n:3, text:"Practise on 3 different days"},
+  app_h:{n:2, text:"Finish 2 Hiragana lessons"}, app_k:{n:2, text:"Finish 2 Katakana lessons"}, app_j:{n:2, text:"Finish 2 Kanji lessons"}, app_p:{n:2, text:"Finish 2 Phrases lessons"},
+  stamps:{n:6, text:"Earn 6 new stamps"}, request:{n:2, text:"Help with 2 goblin requests"},
+  wins:{n:3, text:"Win 3 spirit duels", need:"spirits"}, befriend:{n:1, text:"Befriend a new kind of spirit", need:"befriend"},
+  recall:{n:1, text:"Finish a Type it or Listen lesson", need:"recall"}, feed:{n:3, text:"Feed your buddy 3 times", need:"buddy"}
+};
+function questOk(id){
+  var q = QUESTS[id], apps = window.GobuApps || {};
+  if (q.need === "spirits") return !!(tama.sp && tama.sp.team && tama.sp.team.length);
+  if (q.need === "befriend") return !!(tama.sp && tama.sp.team && tama.sp.team.length) && window.GobuSpirits && GobuSpirits.unmet() > 0;
+  if (q.need === "recall") return ["h","k","j","p"].some(function(a){ return apps[a] && apps[a].rcOn && apps[a].rcOn(); });
+  if (q.need === "buddy") return hasBuddy();
+  return true;
+}
+function weekQuests(){
+  var wk = weekKey(Date.now());
+  if (!tama.wq || tama.wq.week !== wk){
+    var ids = Object.keys(QUESTS).filter(questOk), h = hashStr(wk + cfg.key + (tama.days || 0)), pickd = [];
+    // always one lesson quest, then two others
+    var core = ["lessons", "perfect", "days"], c0 = core[h % 3]; pickd.push(c0);
+    var rest = ids.filter(function(x){ return core.indexOf(x) < 0; });
+    while (pickd.length < 3 && rest.length){ h = (h * 1103515245 + 12345) & 0x7fffffff; pickd.push(rest.splice(h % rest.length, 1)[0]); }
+    tama.wq = {week:wk, ids:pickd, prog:pickd.map(function(){ return 0; }), done:pickd.map(function(){ return 0; }), bonus:0};
+  }
+  return tama.wq;
+}
+function questEvent(kind, n, events){
+  var W2 = weekQuests(), got = 0;
+  W2.ids.forEach(function(id, k){
+    if (id !== kind || W2.done[k]) return;
+    W2.prog[k] = Math.min(QUESTS[id].n, W2.prog[k] + n);
+    if (W2.prog[k] >= QUESTS[id].n){ W2.done[k] = 1; got++; tama.qDone = (tama.qDone || 0) + 1; tama.mush += 5;
+      events.push({kind:"done", text:"Weekly quest done: " + QUESTS[id].text.toLowerCase() + "! +5 mushrooms."}); applySteps(2, events, "weekly quest"); Sfx.play("coin"); }
+  });
+  if (got && !W2.bonus && W2.done.every(function(x){ return x; })){
+    W2.bonus = 1; var gift = giveDeco(false);
+    events.push({kind:"done", text:"All three weekly quests done! The goblins throw a party" + (gift ? " and make a " + gift + " for the village." : ".")});
+    applySteps(3, events, "all weekly quests");
+  }
+}
+
+// ---------- village rank ----------
+var RANKS = [[0,"Camp"],[60,"Hamlet"],[150,"Village"],[280,"Busy village"],[450,"Town"],[650,"Market town"],[900,"Goblin city"],[1200,"Goblin capital"],[1600,"Legendary capital"]];
+function spiritsMet(){ return tama.sp && tama.sp.book ? Object.keys(tama.sp.book).length : 0; }
+function renown(){ var n = tama.stampN || [0,0,0]; return steps + n[0] + n[1] + n[2] + 5*(tama.qDone || 0) + 5*spiritsMet(); }
+function rankIndex(){ var r2 = renown(), k = 0; RANKS.forEach(function(x, i){ if (r2 >= x[0]) k = i; }); return k; }
+function checkRank(events){
+  var k = rankIndex();
+  if (typeof tama.rank !== "number"){ tama.rank = k; return; }
+  while (tama.rank < k){
+    tama.rank++; tama.mush += 10; var gift = giveDeco(false);
+    events.push({kind:"done", text:cfg.name + " is now a " + RANKS[tama.rank][1].toLowerCase() + "! +10 mushrooms" + (gift ? " and a " + gift + "." : ".")});
+    Sfx.play("level");
+  }
+}
+function rankLine(){
+  var k = rankIndex(), r2 = renown(), nx = RANKS[k+1];
+  return {name:RANKS[k][1], renown:r2, next:nx ? nx[1] : "", need:nx ? nx[0] - r2 : 0, frac:nx ? (r2 - RANKS[k][0])/(nx[0] - RANKS[k][0]) : 1};
+}
+function goalsKey(){ var W2 = weekQuests(); return W2.week + ":" + W2.done.filter(function(x){ return x; }).length; }
+function badges(){
+  if (!tama) return {};
+  var q = todaysRequest();
+  return {village: !!(q && !q.done), buddy: !hasBuddy() || !!tama.cardNew || (!asleep() && buddyMood() < 0.35),
+    goals: tama.goalsSeen !== goalsKey(), spirits: !(tama.sp && tama.sp.team && tama.sp.team.length)};
+}
+function afterProgress(events){ checkStamps(events); checkRank(events); saveLocal(); }
+function sideEvent(kind, n){ // progress from outside a lesson (buddy, requests, spirits)
+  var events = []; questEvent(kind, n || 1, events); afterProgress(events);
+  if (cloudSave) cloudSave(); refreshAll(); return events;
+}
+function injectCSS2(){
+  if (document.getElementById("v-css2")) return;
+  var st = document.createElement("style"); st.id = "v-css2";
+  st.textContent = [
+    ".t-links{display:none !important}",
+    ".t-start{display:none;width:100%;margin:10px 0 2px;border:3px solid var(--edge);border-bottom-width:6px;border-radius:12px;background:var(--good);color:#fff;font-family:'Pixelify Sans',sans-serif;font-size:20px;padding:12px;cursor:pointer}",
+    ".today[data-part=village] .t-start{display:block}",
+    ".today[data-part=village] .t-fest,.today[data-part=village] .t-rank,.today[data-part=village] .t-quests,.today[data-part=village] .t-foot,.today[data-part=village] .t-album{display:none}",
+    ".today[data-part=village] .t-row,.today[data-part=goals] .t-row{grid-template-columns:1fr}",
+    ".today[data-part=goals] .t-greet,.today[data-part=goals] .t-req,.today[data-part=goals] .t-quick,.today[data-part=goals] .t-cards,.today[data-part=goals] .t-album,.today[data-part=goals] .t-date{display:none}",
+    ".today[data-part=buddy] .t-greet,.today[data-part=buddy] .t-req,.today[data-part=buddy] .t-row,.today[data-part=buddy] .t-rank,.today[data-part=buddy] .t-quests,.today[data-part=buddy] .t-date,.today[data-part=buddy] .t-cards{display:none}",
+    ".t-rank{display:flex;align-items:center;gap:8px;margin:8px 0 2px;font-size:13px}",
+    ".t-rank b{font-family:'Pixelify Sans',sans-serif;font-weight:500;font-size:15px;white-space:nowrap}",
+    ".t-rank .t-rbar{flex:1;height:8px;border:2px solid var(--edge);border-radius:5px;background:var(--paper);overflow:hidden}.t-rank .t-rbar i{display:block;height:100%;background:var(--gold)}",
+    ".t-rank small{color:var(--muted);white-space:nowrap}",
+    ".t-quests{margin:10px 0 4px;border:2px dashed var(--line);border-radius:10px;padding:8px 10px}",
+    ".t-quests .t-qh{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;margin-bottom:4px}.t-quests .t-qh b{font-family:'Pixelify Sans',sans-serif;font-weight:500;font-size:15px}.t-quests .t-qh small{color:var(--muted)}",
+    ".t-q{display:grid;grid-template-columns:1fr auto;gap:2px 8px;align-items:center;font-size:13px;padding:3px 0}",
+    ".t-q .t-qbar{grid-column:1/3;height:6px;border-radius:3px;background:var(--line);overflow:hidden}.t-q .t-qbar i{display:block;height:100%;background:var(--good)}",
+    ".t-q.done span{text-decoration:line-through;color:var(--muted)}.t-q small{color:var(--muted);font-weight:700}.t-q.done small{color:var(--good)}",
+    ".st-sum .st1{color:#a8682a}.st-sum .st2{color:#7d8a96}.st-sum .st3{color:#c9971a}",
+    ".st-page{border:2px solid var(--line);border-radius:10px;padding:8px;margin:6px 0;background:var(--paper)}.st-page.locked{opacity:.55}",
+    ".st-ph{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:6px}.st-ph span{color:var(--muted);text-align:right}",
+    ".pg-cell.st-c1{background:#f3dcc2;border-color:#b87a3e;color:#8a5220}.pg-cell.st-c2{background:#e6ebf0;border-color:#8f9caa;color:#4d5a68}.pg-cell.st-c3{background:#fbe9a6;border-color:#d4a520;color:#8a6510;box-shadow:0 0 0 1px #f5d36b}"
+  ].join("\n");
+  document.head.appendChild(st);
+}
+
+return {daysPractised:function(){ return tama ? tama.days : 0; }, openStampBook:function(){ openStampBook(); },
+  badges:badges, refreshToday:function(){ todayPanels.forEach(updateToday); buddyPanels.forEach(updateBuddyPanel); }, seenGoals:function(){ var k = goalsKey(); if (tama.goalsSeen !== k){ tama.goalsSeen = k; saveLocal(); } },
+  openBackup:function(){ openBackup(); }, openFeedback:function(){ openFeedback(); }, openSecret:function(){ openSecret(); },
+  spirit:{
+    state:function(){ return tama.sp || null; }, save:function(v){ tama.sp = v; persist(); },
+    mush:function(){ return tama.mush; }, spend:function(n){ if (tama.mush < n) return false; tama.mush -= n; persist(); refreshAll(); return true; },
+    earn:function(n){ tama.mush += n; persist(); refreshAll(); },
+    event:function(kind, n){ return sideEvent(kind, n); },
+    steps:function(n, label){ var ev = []; applySteps(n, ev, label); afterProgress(ev); Sfx.play("hammer"); if (cloudSave) cloudSave(); refreshAll(); return ev; },
+    villageDone:function(){ return villageDone(); }, chapter2:function(){ return chapter2Open(); }, advDone:function(){ return prog.tl.advDone; },
+    rank:function(){ return rankIndex(); }, rankName:function(i){ return RANKS[i][1]; }, buddy:function(){ return hasBuddy() ? buddy() : null; }, avatar:function(g){ return avatar(g, 0.95); }, hour:hourNow
+  }, isFresh:function(){ return freshPlayer; }, startTour:function(st){ startTour(st || cfg.tour()); }, cfgTour:function(){ return cfg.tour(); }, init:init, mount:mount, mountBuddy:mountBuddy, mountToday:mountToday, requestDone:requestDone, advUnlocked:function(){ return prog ? advUnlocked() : 0; }, refresh:refresh, addSteps:addSteps, showEvents:showEvents, total:TOTAL};
 })();
 
 </script>
@@ -2669,6 +3095,82 @@ window.GOBU_ADV_CATS = [
     ["しゅうまつ|は|なに|を|します|か","shuumatsu wa nani o shimasu ka","What are you doing at the weekend?"],
     ["ざんねん|です|が|その|ひ|は|つごう|が|わるい|です","zannen desu ga sono hi wa tsugou ga warui desu","Sorry, but that day doesn't suit me"],
     ["また|こんど|さそって|ください","mata kondo sasotte kudasai","Please invite me again next time"]
+  ]},
+  {id:"adv7", adv:7, name:"Weather and seasons", items:[
+    ["きょう|は|さむい|です|ね","kyou wa samui desu ne","It's cold today, isn't it?"],
+    ["あした|は|ゆき|が|ふる|でしょう","ashita wa yuki ga furu deshou","It will probably snow tomorrow"],
+    ["いい|てんき|です|ね","ii tenki desu ne","Nice weather, isn't it?"],
+    ["かさ|を|もって|いきます","kasa o motte ikimasu","I'll take an umbrella"],
+    ["なつ|が|いちばん|すき|です","natsu ga ichiban suki desu","I like summer best"],
+    ["かぜ|が|つよい|です","kaze ga tsuyoi desu","The wind is strong"]
+  ]},
+  {id:"adv8", adv:8, name:"Asking the way", items:[
+    ["まっすぐ|いって|ください","massugu itte kudasai","Please go straight on"],
+    ["しんごう|を|わたって|ください","shingou o watatte kudasai","Please cross at the traffic lights"],
+    ["ひだり|に|あります","hidari ni arimasu","It's on the left"],
+    ["ここ|から|とおい|です|か","koko kara tooi desu ka","Is it far from here?"],
+    ["ちず|を|かいて|もらえます|か","chizu o kaite moraemasu ka","Could you draw me a map?"],
+    ["あるいて|なんぷん|かかります|か","aruite nanpun kakarimasu ka","How many minutes is it on foot?"]
+  ]},
+  {id:"adv9", adv:9, name:"Cooking and tastes", items:[
+    ["この|さかな|は|しんせん|です","kono sakana wa shinsen desu","This fish is fresh"],
+    ["すこし|からい|です","sukoshi karai desu","It's a little spicy"],
+    ["あまい|もの|が|すき|です","amai mono ga suki desu","I like sweet things"],
+    ["いっしょ|に|りょうり|しましょう","issho ni ryouri shimashou","Let's cook together"],
+    ["おなか|が|いっぱい|です","onaka ga ippai desu","I'm full"],
+    ["おかわり|ください","okawari kudasai","Another helping, please"]
+  ]},
+  {id:"adv10", adv:10, name:"Hobbies and likes", items:[
+    ["なに|を|する|の|が|すき|です|か","nani o suru no ga suki desu ka","What do you like doing?"],
+    ["ほん|を|よむ|の|が|すき|です","hon o yomu no ga suki desu","I like reading books"],
+    ["いっしょ|に|えいが|を|みません|か","issho ni eiga o mimasen ka","Would you like to watch a film together?"],
+    ["サッカー|を|します","sakkaa o shimasu","I play football"],
+    ["ギター|が|ひけます","gitaa ga hikemasu","I can play the guitar"],
+    ["やすみ|の|ひ|は|さんぽ|します","yasumi no hi wa sanpo shimasu","On my days off I go for walks"]
+  ]},
+  {id:"adv11", adv:11, name:"Making friends", items:[
+    ["どこ|から|きました|か","doko kara kimashita ka","Where are you from?"],
+    ["イギリス|から|きました","igirisu kara kimashita","I'm from the UK"],
+    ["また|あいましょう","mata aimashou","Let's meet again"],
+    ["れんらくさき|を|おしえて|ください","renrakusaki o oshiete kudasai","Please give me your contact details"],
+    ["いっしょ|に|しゃしん|を|とりましょう","issho ni shashin o torimashou","Let's take a photo together"],
+    ["たのしかった|です","tanoshikatta desu","It was fun"]
+  ]},
+  {id:"adv12", adv:12, name:"Health and feelings", items:[
+    ["あたま|が|いたい|です","atama ga itai desu","I have a headache"],
+    ["ちょっと|つかれました","chotto tsukaremashita","I'm a bit tired"],
+    ["ねつ|が|あります","netsu ga arimasu","I have a fever"],
+    ["くすり|を|ください","kusuri o kudasai","Medicine, please"],
+    ["ゆっくり|やすんで|ください","yukkuri yasunde kudasai","Please get plenty of rest"],
+    ["おだいじ|に","odaiji ni","Get well soon"]
+  ]}
+];
+// Kanji sets unlocked by adventures 1 to 6. Readings in brackets are the kana that follow the kanji (okurigana).
+window.GOBU_ADV_KANJI = [
+  {id:"kt", adv:1, name:"Time", items:[
+    ["時","ji/toki","time, o'clock"],["分","fun/pun","minute"],["半","han","half"],["今","ima","now"],["年","nen/toshi","year"],
+    ["週","shuu","week"],["毎","mai","every"],["午|前","go zen","a.m., morning"],["午|後","go go","p.m., afternoon"]
+  ]},
+  {id:"kp", adv:2, name:"People", items:[
+    ["父","chichi","father"],["母","haha","mother"],["子","ko","child"],["友","tomo","friend"],["私","watashi","I, me"],
+    ["先|生","sen sei","teacher"],["学|生","gaku sei","student"],["名|前","na mae","name"]
+  ]},
+  {id:"kf", adv:3, name:"Food and drink", items:[
+    ["食","ta(beru)","eat"],["飲","no(mu)","drink"],["肉","niku","meat"],["魚","sakana","fish"],["米","kome","rice (uncooked)"],
+    ["茶","cha","tea"],["牛|肉","gyuu niku","beef"],["野|菜","ya sai","vegetables"]
+  ]},
+  {id:"kw", adv:4, name:"Around town", items:[
+    ["店","mise","shop"],["家","ie","house, home"],["町","machi","town"],["道","michi","road"],["車","kuruma","car"],
+    ["電|車","den sha","train"],["銀|行","gin kou","bank"],["病|院","byou in","hospital"],["公|園","kou en","park"]
+  ]},
+  {id:"ks", adv:5, name:"Weather and seasons", items:[
+    ["雨","ame","rain"],["雪","yuki","snow"],["風","kaze","wind"],["空","sora","sky"],["春","haru","spring"],
+    ["夏","natsu","summer"],["秋","aki","autumn"],["冬","fuyu","winter"],["天|気","ten ki","weather"]
+  ]},
+  {id:"kv", adv:6, name:"Verbs and describing words", items:[
+    ["行","i(ku)","go"],["来","ku(ru)","come"],["見","mi(ru)","see"],["聞","ki(ku)","hear, ask"],["話","hana(su)","speak"],
+    ["読","yo(mu)","read"],["書","ka(ku)","write"],["買","ka(u)","buy"],["高","taka(i)","tall, expensive"],["安","yasu(i)","cheap"],
+    ["新","atara(shii)","new"],["古","furu(i)","old"]
   ]}
 ];
 
@@ -2676,20 +3178,40 @@ window.GOBU_ADV_CATS = [
 <script>
 
 var Shell = (function(){
-  var current = "h", screens = {h:"home", k:"home", j:"home", p:"home"};
-  try{ var savedTab = localStorage.getItem("jp-tab"); current = savedTab === "p" || savedTab === "k" || savedTab === "j" ? savedTab : "h"; }catch(e){}
-  function apply(){
-    document.querySelectorAll(".app").forEach(function(a){ a.classList.toggle("on", a.id === "app-" + current); });
-    document.querySelectorAll(".tabs button").forEach(function(b){ b.classList.toggle("on", b.getAttribute("data-app") === current); });
-    document.getElementById("shell").style.display = screens[current] === "home" ? "" : "none";
-    if (screens[current] === "home" && window.GobuApps && window.GobuApps[current]) window.GobuApps[current].refresh();
-    Village.refresh();
+  // five screens behind the bottom menu; the study tabs live on the Learn screen
+  var view = "village", current = "h", screens = {h:"home", k:"home", j:"home", p:"home", s:"home"}, VIEWS = ["village","learn","spirits","buddy","goals"];
+  try{
+    var savedTab = localStorage.getItem("jp-tab"), savedView = localStorage.getItem("jp-view");
+    current = savedTab === "p" || savedTab === "k" || savedTab === "j" ? savedTab : "h";
+    view = VIEWS.indexOf(savedView) >= 0 ? savedView : savedTab === "s" ? "spirits" : "village";
+  }catch(e){}
+  function store(){ try{ localStorage.setItem("jp-tab", current); localStorage.setItem("jp-view", view); }catch(e){} }
+  function inTask(){ return (view === "learn" && screens[current] !== "home") || (view === "spirits" && screens.s !== "home"); }
+  function dots(){
+    var b = Village.badges ? Village.badges() : {};
+    document.querySelectorAll(".bnav button").forEach(function(btn){ var v = btn.getAttribute("data-view"); btn.classList.toggle("has-dot", !!b[v] && v !== view); });
   }
+  function apply(){
+    document.querySelectorAll(".view").forEach(function(x){ x.classList.toggle("on", x.id === "view-" + view); });
+    document.querySelectorAll("#view-learn > .app").forEach(function(a){ a.classList.toggle("on", a.id === "app-" + current); });
+    var sp = document.getElementById("app-s"); if (sp) sp.classList.add("on");
+    document.querySelectorAll(".tabs button").forEach(function(b){ b.classList.toggle("on", b.getAttribute("data-app") === current); });
+    document.querySelectorAll(".bnav button").forEach(function(b){ b.classList.toggle("on", b.getAttribute("data-view") === view); });
+    document.body.classList.toggle("in-task", inTask());
+    if (view === "learn" && screens[current] === "home" && window.GobuApps && window.GobuApps[current]) window.GobuApps[current].refresh();
+    if (view === "spirits" && screens.s === "home" && window.GobuApps && window.GobuApps.s) window.GobuApps.s.refresh();
+    if (view === "goals" && Village.seenGoals) Village.seenGoals();
+    if (Village.refreshToday) Village.refreshToday();
+    Village.refresh(); dots();
+  }
+  function show(v){ if (view !== v){ view = v; store(); window.scrollTo(0, 0); } apply(); }
   document.querySelectorAll(".tabs button").forEach(function(b){
-    b.onclick = function(){ current = b.getAttribute("data-app"); try{ localStorage.setItem("jp-tab", current); }catch(e){} apply(); };
+    b.onclick = function(){ current = b.getAttribute("data-app"); store(); apply(); };
   });
-  return {screen:function(app, id){ screens[app] = id; if (app === current) apply(); }, apply:apply,
-    current:function(){ return current; }, go:function(app){ current = app; try{ localStorage.setItem("jp-tab", current); }catch(e){} apply(); }};
+  document.querySelectorAll(".bnav button").forEach(function(b){ b.onclick = function(){ show(b.getAttribute("data-view")); }; });
+  setInterval(function(){ if (!document.hidden) dots(); }, 2000);
+  return {screen:function(app, id){ screens[app] = id; if ((app === "s" && view === "spirits") || (app === current && view === "learn")) apply(); }, apply:apply, show:show,
+    current:function(){ return current; }, view:function(){ return view; }, go:function(app){ current = app; view = "learn"; store(); apply(); }};
 })();
 var QUIZ_KANA = "あ a い i う u え e お o か ka き ki く ku け ke こ ko さ sa し shi す su せ se そ so た ta ち chi つ tsu て te と to な na に ni ぬ nu ね ne の no は ha ひ hi ふ fu へ he ほ ho ま ma み mi む mu め me も mo や ya ゆ yu よ yo ら ra り ri る ru れ re ろ ro わ wa を wo ん n".split(" ");
 function buddyQuiz(){
@@ -2757,22 +3279,33 @@ REQUESTS.push({app:"k", ids:["words"], mode:"flash", text:"{name} found a menu f
 [["greet","greetings"],["polite","polite phrases"],["travel","phrases for getting around"],["food","phrases for eating out"],["shop","shopping phrases"],["talk","conversation phrases"],["help","phrases for asking for help"]].forEach(function(t){
   REQUESTS.push({app:"p", ids:[t[0]], mode:"flash", text:"{name} is learning " + t[1] + " and wants your help."});
 });
+(window.GOBU_ADV_KANJI || []).forEach(function(c){
+  REQUESTS.push({app:"j", ids:[c.id], mode:"flash", locked:function(){ return Village.advUnlocked() < c.adv; }, text:"{name} is learning kanji for " + c.name.toLowerCase() + " and wants your help."});
+});
 (window.GOBU_ADV_CATS || []).forEach(function(c){
   REQUESTS.push({app:"p", ids:[c.id], mode:"build", locked:function(){ return Village.advUnlocked() < c.adv; }, text:"{name} is getting ready for an adventure and wants to practise " + c.name.toLowerCase() + " phrases."});
 });
 Village.init({key:"jp", name:"Kanamura", goblins:[["Grubnik", "Collects shiny buttons."], ["Mossa", "Hums when she is nervous."], ["Pip", "Smallest goblin, loudest laugh."], ["Snagwort", "Bakes terrible bread with great pride."], ["Nettle", "Keeps a pet snail called Ken."], ["Bramble", "Counts stars to fall asleep."], ["Gizzik", "Best tree climber in the valley."], ["Toadflax", "Knits tiny socks for frogs."], ["Wortle", "Grumpy before breakfast."], ["Fennick", "Draws maps of places he has never been."], ["Sorrel", "Secretly very brave."], ["Lumpkin", "Sleeps in his boots."], ["Grimble", "Tells very long stories."], ["Puddle", "Jumps in every puddle."], ["Thistle", "Always wanted to run a tavern."]], quiz:buddyQuiz, requests:REQUESTS,
-  quick:function(){ window.GobuApps[Shell.current()].quick(); },
+  quick:function(){ Shell.go(Shell.current()); window.GobuApps[Shell.current()].quick(); },
+  learn:function(){ Shell.show("learn"); },
+  showView:function(v){ Shell.show(v); },
   startRequest:function(q){ Shell.go(q.app); window.GobuApps[q.app].request(q.ids, q.mode); },
   progress:function(){ openProgress(); },
   tour:function(){ return [
-    {el:"#homeVillage", text:"Welcome to Kanamura! I'm {name}. Our village has fallen to pieces, and we goblins have nowhere to live."},
-    {el:".tabs", text:"Pick Hiragana, Katakana or Phrases, then start a lesson with the buttons at the bottom of the screen. Every lesson you finish builds us a little more of the village."},
-    {el:"#homeBuddy", text:"Choose one of us as your buddy. Lessons earn mushrooms, which you can use to feed your buddy. You can also bathe and play with them."},
-    {el:"#homeToday", text:"Check here every day for a goblin's request, a one-minute quick quest and festival progress. Once the village grows, swipe it left and right to explore. Ganbatte!"}
+    {view:"village", el:"#homeVillage", text:"Welcome to Kanamura! I'm {name}. Our village has fallen to pieces, and we goblins have nowhere to live."},
+    {view:"village", el:"#homeToday", text:"Every lesson you finish builds us a little more of the village. Check here each day for a goblin's request, then press Start a lesson."},
+    {view:"learn", el:".learn-top", text:"Pick Hiragana, Katakana, Kanji or Phrases, then start a lesson with the buttons at the bottom of the screen."},
+    {view:"buddy", el:"#homeBuddy", text:"Choose one of us as your buddy. Lessons earn mushrooms to feed your buddy, and you can bathe and play with them too."},
+    {view:"goals", el:"#goalsToday", text:"Weekly quests, the festival and your village rank live here. The Spirits tab lets you make friends with yōkai using your Japanese. Ganbatte!"}
   ]; }});
 Village.mount(document.getElementById("homeVillage"));
 Village.mountBuddy(document.getElementById("homeBuddy"));
-Village.mountToday(document.getElementById("homeToday"));
+Village.mountToday(document.getElementById("homeToday"), "village");
+Village.mountToday(document.getElementById("goalsToday"), "goals");
+Village.mountToday(document.getElementById("buddyToday"), "buddy");
+document.getElementById("learnStamps").onclick = function(){ Village.openStampBook(); };
+document.getElementById("goalStamps").onclick = function(){ Village.openStampBook(); };
+document.getElementById("goalProgress").onclick = function(){ openProgress(); };
 // Signed-out viewers on claude.ai see a sign-in notice along the bottom of the page: lift the app's bottom controls above it.
 (function(){
   try{
@@ -2781,11 +3314,32 @@ Village.mountToday(document.getElementById("homeToday"));
   }catch(e){}
 })();
 (function(){
-  var btn = document.getElementById("sfxBtn");
-  function paint(){ var onNow = Sfx.isOn(); btn.classList.toggle("off", !onNow); btn.setAttribute("aria-label", onNow ? "Sound effects on. Tap to mute" : "Sound effects off. Tap to turn on"); btn.title = onNow ? "Sound on" : "Sound off"; btn.innerHTML = '<i></i><span>' + (onNow ? "Sound on" : "Muted") + '</span>'; }
-  btn.onclick = function(){ Sfx.setOn(!Sfx.isOn()); paint(); };
-  paint();
-  document.addEventListener("pointerdown", function(e){ var b = e.target.closest && e.target.closest(".tile, .word, .chip, .mode, .tabs button, .b-actions button, .t-quick, .t-rbtn, .b-gob"); if (b) Sfx.play("tap"); }, {passive:true});
+  function openMenu(){
+    var ov = document.createElement("div"); ov.className = "s-overlay pg-overlay";
+    ov.innerHTML = '<div class="pg-box"><div class="pg-head"><b>Menu</b><button class="pg-close" aria-label="Close">×</button></div><div class="menu-list">' +
+      '<button data-m="sound"></button>' +
+      '<button data-m="howto">How to play<small>A quick tour of the village</small></button>' +
+      '<button data-m="backup">Back up or move progress<small>Copy a save code to another device</small></button>' +
+      '<button data-m="secret">Secret code<small>Whisper a word to the goblins</small></button>' +
+      '<button data-m="feedback">Send feedback<small>A wrong answer, a bug or an idea</small></button></div></div>';
+    document.body.appendChild(ov);
+    var snd = ov.querySelector('[data-m="sound"]');
+    function paintSound(){ snd.innerHTML = (Sfx.isOn() ? "Sound effects: on" : "Sound effects: off") + "<small>Tap to " + (Sfx.isOn() ? "mute" : "turn on") + "</small>"; }
+    paintSound();
+    function close(){ ov.remove(); }
+    ov.querySelector(".pg-close").onclick = close;
+    ov.addEventListener("click", function(e){ if (e.target === ov) close(); });
+    ov.querySelectorAll(".menu-list button").forEach(function(b){
+      b.onclick = function(){
+        var m = b.getAttribute("data-m");
+        if (m === "sound"){ Sfx.setOn(!Sfx.isOn()); paintSound(); return; }
+        close();
+        if (m === "howto") Village.startTour(); else if (m === "backup") Village.openBackup(); else if (m === "secret") Village.openSecret(); else if (m === "feedback") Village.openFeedback();
+      };
+    });
+  }
+  document.getElementById("menuBtn").onclick = openMenu;
+  document.addEventListener("pointerdown", function(e){ var b = e.target.closest && e.target.closest(".tile, .word, .chip, .mode, .tabs button, .bnav button, .b-actions button, .t-quick, .t-start, .t-rbtn, .b-gob, .sp-btn, .sp-opt, .sp-area"); if (b) Sfx.play("tap"); }, {passive:true});
 })();
 
 </script>
@@ -3124,7 +3678,7 @@ function finish(){
   var perfect = L.mistakes === 0;
   if (!L.quick) CARDS = CARDS_FULL;
   if (perfect) Sfx.play("fanfare");
-  var evs = Village.addSteps(perfect ? 2 : 1, perfect);
+  var evs = Village.addSteps(perfect ? 2 : 1, perfect, {app:"h", mode:L.mode});
   if (L.request) Village.requestDone(evs);
   Village.showEvents($("resVillage"), evs);
   show("results");
@@ -3148,7 +3702,7 @@ function pushRecent(v){
   var st = rcState(); st.total++; save(PFX + "recall", st);
 }
 var _hitRC = hit, _missRC = miss;
-hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); };
+hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); if (L && (L.mode === "type" || L.mode === "listen")){ var rci = load(PFX + "rcitems", {}); rci[k] = (rci[k] || 0) + 1; save(PFX + "rcitems", rci); } };
 miss = function(k){ _missRC(k); pushRecent(0); Sfx.play("bad"); };
 function rcAccuracy(){ var a = load(PFX + "recent", []), n = 0; a.forEach(function(v){ n += v; }); return {n:a.length, acc:a.length ? n/a.length : 0}; }
 function rcRender(){
@@ -3251,6 +3805,10 @@ document.addEventListener("keydown", function(e){
 window.GobuApps = window.GobuApps || {};
 window.GobuApps["h"] = {
   items: function(){ return ALL; }, stats: function(){ return stats; },
+  answer: function(k, ok){ (ok ? hit : miss)(k); },
+  rcItems: function(){ return load(PFX + "rcitems", {}); },
+  rcOn: function(){ return !!rcState().unlocked; },
+  pages: function(){ return typeof GROUPS !== "undefined" ? GROUPS.map(function(g){ return {id:"h-" + g.id, name:g.name, items:ROWS.filter(function(r){ return r.g === g.id; }).reduce(function(a, r){ return a.concat(r.items); }, [])}; }) : CATS.map(function(c){ return {id:"h-" + c.id, name:c.name, items:c.items, locked:typeof catOpen === "function" && !catOpen(c)}; }); },
   refresh: function(){ if (!L) renderHome(); },
   quick: function(){ var pool = currentPool(); if (pool.length < 4) pool = ALL; CARDS = 5; start("flash", pool); if (L) L.quick = true; },
   request: function(ids, mode){ var pool = ROWS.filter(function(r){ return ids.indexOf(r.id) >= 0; }).reduce(function(a, r){ return a.concat(r.items); }, []); CARDS = CARDS_FULL; start(mode, pool); if (L) L.request = true; }
@@ -3600,7 +4158,7 @@ function finish(){
   var perfect = L.mistakes === 0;
   if (!L.quick) CARDS = CARDS_FULL;
   if (perfect) Sfx.play("fanfare");
-  var evs = Village.addSteps(perfect ? 2 : 1, perfect);
+  var evs = Village.addSteps(perfect ? 2 : 1, perfect, {app:"k", mode:L.mode});
   if (L.request) Village.requestDone(evs);
   Village.showEvents($("resVillage"), evs);
   show("results");
@@ -3624,7 +4182,7 @@ function pushRecent(v){
   var st = rcState(); st.total++; save(PFX + "recall", st);
 }
 var _hitRC = hit, _missRC = miss;
-hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); };
+hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); if (L && (L.mode === "type" || L.mode === "listen")){ var rci = load(PFX + "rcitems", {}); rci[k] = (rci[k] || 0) + 1; save(PFX + "rcitems", rci); } };
 miss = function(k){ _missRC(k); pushRecent(0); Sfx.play("bad"); };
 function rcAccuracy(){ var a = load(PFX + "recent", []), n = 0; a.forEach(function(v){ n += v; }); return {n:a.length, acc:a.length ? n/a.length : 0}; }
 function rcRender(){
@@ -3727,6 +4285,10 @@ document.addEventListener("keydown", function(e){
 window.GobuApps = window.GobuApps || {};
 window.GobuApps["k"] = {
   items: function(){ return ALL; }, stats: function(){ return stats; },
+  answer: function(k, ok){ (ok ? hit : miss)(k); },
+  rcItems: function(){ return load(PFX + "rcitems", {}); },
+  rcOn: function(){ return !!rcState().unlocked; },
+  pages: function(){ return typeof GROUPS !== "undefined" ? GROUPS.map(function(g){ return {id:"k-" + g.id, name:g.name, items:ROWS.filter(function(r){ return r.g === g.id; }).reduce(function(a, r){ return a.concat(r.items); }, [])}; }) : CATS.map(function(c){ return {id:"k-" + c.id, name:c.name, items:c.items, locked:typeof catOpen === "function" && !catOpen(c)}; }); },
   refresh: function(){ if (!L) renderHome(); },
   quick: function(){ var pool = currentPool(); if (pool.length < 4) pool = ALL; CARDS = 5; start("flash", pool); if (L) L.quick = true; },
   request: function(ids, mode){ var pool = ROWS.filter(function(r){ return ids.indexOf(r.id) >= 0; }).reduce(function(a, r){ return a.concat(r.items); }, []); CARDS = CARDS_FULL; start(mode, pool); if (L) L.request = true; }
@@ -3768,6 +4330,9 @@ var CATS = [
     ["大","oo/dai","big"],["小","ko/shou","small"],["本","hon","book"],["日|本","ni hon","Japan"]
   ]}
 ];
+CATS = CATS.concat((window.GOBU_ADV_KANJI || []).map(function(c){ return {id:c.id, name:c.name, adv:c.adv, items:c.items.slice()}; }));
+function catOpen(c){ return !c.adv || Village.advUnlocked() >= c.adv; }
+function catOpenId(id){ for (var i=0;i<CATS.length;i++) if (CATS[i].id === id) return catOpen(CATS[i]); return false; }
 var ALL = [];
 CATS.forEach(function(c){
   c.items = c.items.map(function(a){
@@ -3827,13 +4392,15 @@ function speak(t, force){
 }
 
 // ---------- home ----------
-function currentPool(){ return ALL.filter(function(it){ return selected.indexOf(it.cat) >= 0; }); }
+function currentPool(){ return ALL.filter(function(it){ return selected.indexOf(it.cat) >= 0 && catOpenId(it.cat); }); }
 function renderHome(){
+  var un = Village.advUnlocked(), seen = load("kan-advseen", 0);
+  if (un > seen){ CATS.forEach(function(c){ if (c.adv && c.adv > seen && c.adv <= un && selected.indexOf(c.id) < 0) selected.push(c.id); }); save("kan-advseen", un); save("kan-cats", selected); }
   var host = $("cats"); host.innerHTML = "";
-  CATS.forEach(function(c){
+  CATS.filter(catOpen).forEach(function(c){
     var b = document.createElement("button");
     b.className = "chip" + (selected.indexOf(c.id)>=0 ? " on" : "");
-    b.innerHTML = esc(c.name) + "<small>" + c.items.length + "</small>";
+    b.innerHTML = (c.adv ? "★ " : "") + esc(c.name) + "<small>" + c.items.length + "</small>";
     b.onclick = function(){
       var i = selected.indexOf(c.id); if (i>=0) selected.splice(i,1); else selected.push(c.id);
       save("kan-cats", selected); renderHome();
@@ -3841,7 +4408,7 @@ function renderHome(){
     host.appendChild(b);
   });
   var n = currentPool().length;
-  $("poolinfo").textContent = n ? n + " kanji selected" : "Nothing selected yet";
+  $("poolinfo").textContent = (n ? n + " kanji selected" : "Nothing selected yet") + (Village.advUnlocked() < (window.GOBU_ADV_KANJI||[]).reduce(function(m,c){ return Math.max(m, c.adv); }, 0) ? (Village.advUnlocked() ? ". Go on more adventures to unlock more kanji (★)." : ". Finish the village and go on adventures to unlock more kanji (★).") : "");
   $("optRomaji").checked = !!prefs.romaji; $("optReverse").checked = !!prefs.reverse; $("optSound").checked = !!prefs.sound;
   $("startMsg").textContent = "";
   renderTricky();
@@ -3871,7 +4438,7 @@ ROOT.querySelectorAll("[data-quit]").forEach(function(b){ b.onclick = function()
 // ---------- browse ----------
 $("toBrowse").onclick = function(){
   var html = "";
-  CATS.forEach(function(c){
+  CATS.filter(catOpen).forEach(function(c){
     html += '<section class="panel"><h2>'+esc(c.name)+'</h2>';
     c.items.forEach(function(it){
       html += '<div class="phr" data-k="'+esc(it.k)+'"><div class="t"><div class="ja jp">'+jaWrap(it)+'</div><div class="ro">'+esc(it.r)+'</div><div class="en">'+esc(it.en)+'</div></div><span class="sp">🔊</span></div>';
@@ -4074,7 +4641,7 @@ function finish(){
   var perfect = L.mistakes === 0;
   if (!L.quick) CARDS = CARDS_FULL;
   if (perfect) Sfx.play("fanfare");
-  var evs = Village.addSteps(perfect ? 2 : 1, perfect);
+  var evs = Village.addSteps(perfect ? 2 : 1, perfect, {app:"j", mode:L.mode});
   if (L.request) Village.requestDone(evs);
   Village.showEvents($("resVillage"), evs);
   show("results");
@@ -4097,7 +4664,7 @@ function pushRecent(v){
   var st = rcState(); st.total++; save(PFX + "recall", st);
 }
 var _hitRC = hit, _missRC = miss;
-hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); };
+hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); if (L && (L.mode === "type" || L.mode === "listen")){ var rci = load(PFX + "rcitems", {}); rci[k] = (rci[k] || 0) + 1; save(PFX + "rcitems", rci); } };
 miss = function(k){ _missRC(k); pushRecent(0); Sfx.play("bad"); };
 function rcAccuracy(){ var a = load(PFX + "recent", []), n = 0; a.forEach(function(v){ n += v; }); return {n:a.length, acc:a.length ? n/a.length : 0}; }
 function rcRender(){
@@ -4200,6 +4767,10 @@ document.addEventListener("keydown", function(e){
 window.GobuApps = window.GobuApps || {};
 window.GobuApps["j"] = {
   items: function(){ return ALL; }, stats: function(){ return stats; },
+  answer: function(k, ok){ (ok ? hit : miss)(k); },
+  rcItems: function(){ return load(PFX + "rcitems", {}); },
+  rcOn: function(){ return !!rcState().unlocked; },
+  pages: function(){ return typeof GROUPS !== "undefined" ? GROUPS.map(function(g){ return {id:"j-" + g.id, name:g.name, items:ROWS.filter(function(r){ return r.g === g.id; }).reduce(function(a, r){ return a.concat(r.items); }, [])}; }) : CATS.map(function(c){ return {id:"j-" + c.id, name:c.name, items:c.items, locked:typeof catOpen === "function" && !catOpen(c)}; }); },
   refresh: function(){ if (!L) renderHome(); },
   quick: function(){ var pool = currentPool(); if (pool.length < 4) pool = ALL; CARDS = 5; start("flash", pool); if (L) L.quick = true; },
   request: function(ids, mode){ var pool = ALL.filter(function(it){ return ids.indexOf(it.cat) >= 0; }); CARDS = CARDS_FULL; start(mode, pool); if (L) L.request = true; }
@@ -4363,7 +4934,7 @@ function renderHome(){
     host.appendChild(b);
   });
   var n = currentPool().length;
-  $("poolinfo").textContent = (n ? n + " phrases selected" : "Nothing selected yet") + (Village.advUnlocked() < (window.GOBU_ADV_CATS||[]).length ? ". Finish the village and go on adventures to unlock harder phrases (★)." : "");
+  $("poolinfo").textContent = (n ? n + " phrases selected" : "Nothing selected yet") + (Village.advUnlocked() < (window.GOBU_ADV_CATS||[]).reduce(function(m,c){ return Math.max(m, c.adv); }, 0) ? (Village.advUnlocked() ? ". Go on more adventures to unlock more phrases (★)." : ". Finish the village and go on adventures to unlock more phrases (★).") : "");
   $("optRomaji").checked = !!prefs.romaji; $("optReverse").checked = !!prefs.reverse; $("optSound").checked = !!prefs.sound;
   $("startMsg").textContent = "";
   renderTricky();
@@ -4596,7 +5167,7 @@ function finish(){
   var perfect = L.mistakes === 0;
   if (!L.quick) CARDS = CARDS_FULL;
   if (perfect) Sfx.play("fanfare");
-  var evs = Village.addSteps(perfect ? 2 : 1, perfect);
+  var evs = Village.addSteps(perfect ? 2 : 1, perfect, {app:"p", mode:L.mode});
   if (L.request) Village.requestDone(evs);
   Village.showEvents($("resVillage"), evs);
   show("results");
@@ -4619,7 +5190,7 @@ function pushRecent(v){
   var st = rcState(); st.total++; save(PFX + "recall", st);
 }
 var _hitRC = hit, _missRC = miss;
-hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); };
+hit = function(k){ _hitRC(k); pushRecent(1); Sfx.play("good"); if (L && (L.mode === "type" || L.mode === "listen")){ var rci = load(PFX + "rcitems", {}); rci[k] = (rci[k] || 0) + 1; save(PFX + "rcitems", rci); } };
 miss = function(k){ _missRC(k); pushRecent(0); Sfx.play("bad"); };
 function rcAccuracy(){ var a = load(PFX + "recent", []), n = 0; a.forEach(function(v){ n += v; }); return {n:a.length, acc:a.length ? n/a.length : 0}; }
 function rcRender(){
@@ -4722,6 +5293,10 @@ document.addEventListener("keydown", function(e){
 window.GobuApps = window.GobuApps || {};
 window.GobuApps["p"] = {
   items: function(){ return ALL; }, stats: function(){ return stats; },
+  answer: function(k, ok){ (ok ? hit : miss)(k); },
+  rcItems: function(){ return load(PFX + "rcitems", {}); },
+  rcOn: function(){ return !!rcState().unlocked; },
+  pages: function(){ return typeof GROUPS !== "undefined" ? GROUPS.map(function(g){ return {id:"p-" + g.id, name:g.name, items:ROWS.filter(function(r){ return r.g === g.id; }).reduce(function(a, r){ return a.concat(r.items); }, [])}; }) : CATS.map(function(c){ return {id:"p-" + c.id, name:c.name, items:c.items, locked:typeof catOpen === "function" && !catOpen(c)}; }); },
   refresh: function(){ if (!L) renderHome(); },
   quick: function(){ var pool = currentPool(); if (pool.length < 4) pool = ALL; CARDS = 5; start("flash", pool); if (L) L.quick = true; },
   request: function(ids, mode){ var pool = ALL.filter(function(it){ return ids.indexOf(it.cat) >= 0; }); CARDS = CARDS_FULL; start(mode, pool); if (L) L.request = true; }
@@ -4731,6 +5306,691 @@ Village.mount($("resVillage"), {results:true});
 renderHome();
 })();
 
+</script>
+<script>
+// Pixel sprites for the spirits (14 x 14). "." is transparent; letters map to the palette in pal.
+window.GOBU_SPIRIT_ART = {
+  kodama:{pal:{k:"#3b3a30", w:"#f3f1e7", s:"#cfccbb", g:"#6aa84f", G:"#8cc063", p:"#f7b7cf"}, px:[
+    "......gG......",
+    ".....g........",
+    "....kkkkkk....",
+    "...kwwwwwwk...",
+    "..kwwwwwwwwk..",
+    "..kwwwwwwwwk..",
+    "..kwkwwwwkwk..",
+    "..kpwwwwwwpk..",
+    "..kswwkkwwsk..",
+    "...kswwwwsk...",
+    "...kwwwwwwk...",
+    "..kwkwwwwkwk..",
+    "...kwwkkwwk...",
+    "....kk..kk...."]},
+  tanuki:{pal:{k:"#2a2116", b:"#8a6a4a", d:"#4a3626", c:"#e8d8b0", g:"#6aa84f"}, px:[
+    "......gg......",
+    "..bb.ggg..bb..",
+    "..bdbbbbbbdb..",
+    "..bbbbbbbbbb..",
+    ".bddddbbddddb.",
+    ".bdkcdbbdkcdb.",
+    ".bbddbbbbddbb.",
+    "..bbbbkkbbbb..",
+    "..bbccccccbb..",
+    ".bbccccccccbb.",
+    ".bbccccccccbbd",
+    "..bccccccccbdd",
+    "..bbccccccbbd.",
+    "...dd....dd..."]},
+  hinotama:{pal:{k:"#3a1a10", r:"#e8642c", o:"#f39a33", y:"#ffe27a", w:"#fff8e0"}, px:[
+    "......r.......",
+    ".....rr...r...",
+    "....ror..rr...",
+    "...rorr.ror...",
+    "..roorrroor...",
+    "..royyoooor...",
+    ".royyyyyyyor..",
+    ".roykyyykyor..",
+    ".royyyyyyyor..",
+    ".royyywyyyor..",
+    "..royyyyyor...",
+    "..rroyyyorr...",
+    "...rrooorr....",
+    ".....rrr......"]},
+  kawauso:{pal:{k:"#2a2116", b:"#9a6b45", d:"#6b4628", c:"#e6d2b0"}, px:[
+    "..............",
+    "...bb....bb...",
+    "...bdbbbbdb...",
+    "..bbbbbbbbbb..",
+    "..bbkbbbbkbb..",
+    "..bccccccccb..",
+    "..bcccckcccb..",
+    "...bcckkccb...",
+    "...bbccccbb...",
+    "..bbbccccbbb..",
+    ".bb.bccccb.bb.",
+    "....bbbbbbddd.",
+    "....bb..bb.ddd",
+    "....dd..dd...d"]},
+  tsuchinoko:{pal:{k:"#2a2116", g:"#a89a52", d:"#6a5a2a", c:"#e0d29a", r:"#c8402b"}, px:[
+    "..............",
+    "..............",
+    "...dddd.......",
+    "..dggggd......",
+    ".dgkgggd......",
+    ".dggggggd.....",
+    "rdccgggggd....",
+    ".dcccggggdd...",
+    "..dcccgggggd..",
+    "...dcccggggd..",
+    "....dcccgggd..",
+    ".....ddddggd..",
+    ".........dgd..",
+    "..........dd.."]},
+  kappa:{pal:{k:"#1d2a14", g:"#5aa040", d:"#3a7a2a", y:"#e0b040", w:"#cfe8f0", s:"#8a6a3a", S:"#6a4a22"}, px:[
+    "....wwwwww....",
+    "...gwwwwwwg...",
+    "..gggggggggg..",
+    "..ggkggggkgg..",
+    "..ggggyyyggg..",
+    "...gggyyyyg...",
+    "...dggggggd...",
+    "..gsssggsssg..",
+    ".gdsSsggsSsdg.",
+    ".g.sssggsss.g.",
+    "...dggggggd...",
+    "...gg....gg...",
+    "..ggg....ggg..",
+    ".............."]},
+  bakeneko:{pal:{k:"#2a2116", w:"#f4ede0", o:"#e0904a", p:"#ef7fb0", t:"#5a86c8", y:"#ffe27a"}, px:[
+    "..tttttttttt..",
+    "..twtttttwtt..",
+    "..oo......oo..",
+    "..owo....owo..",
+    "..owwwwwwwwo..",
+    "..wwkywwykww..",
+    "..wwwwppwwww..",
+    "...wwwkkwww...",
+    "...owwwwwwo..o",
+    "..owwwwwwwwo.o",
+    "..owwwwwwwwoo.",
+    "...owwwwwwo...",
+    "...ww....ww...",
+    ".............."]},
+  baku:{pal:{k:"#2a2116", b:"#8a7fb0", d:"#5f5588", w:"#f4f0ff", p:"#c8b8f0"}, px:[
+    "..............",
+    "..............",
+    "....bbbbbb....",
+    "...bbbbbbbbd..",
+    "..bbkbbbbbbbdd",
+    "bbbbbbbbbbbbbd",
+    "bpbbbbbwwwwbbd",
+    ".bb.bwwwwwwwbd",
+    "....bwwwwwwwbd",
+    "....bbwwwwwbbd",
+    "....bbbbbbbbd.",
+    "....bb.bb.bb..",
+    "....dd.dd.dd..",
+    ".............."]},
+  amabie:{pal:{k:"#2a2116", s:"#7fd3c8", d:"#3f9a90", h:"#b8f0e8", y:"#f2b63b", w:"#ffffff"}, px:[
+    "..hh....hh....",
+    ".hhhh..hhhh...",
+    ".hhssssssshh..",
+    "..sskssksssh..",
+    "..sssyyyssshh.",
+    "...ssyyysss.hh",
+    "..sddsssddss..",
+    ".sdwdsssdwds..",
+    "..sddsssddss..",
+    "...ssssssss...",
+    "....dsssssd...",
+    "...d.d.d.d.d..",
+    "..d..d.d.d..d.",
+    ".............."]},
+  kitsune:{pal:{k:"#2a2116", o:"#e8842c", w:"#fff6e8", r:"#c8402b", y:"#ffe27a"}, px:[
+    "..o.......o...",
+    "..oo.....oo...",
+    "..owo...owo...",
+    "..oooooooo....",
+    ".ooroooorooo..",
+    ".owwkoookwwo..",
+    "..wwwwwwwww...",
+    "...wwwkwww..oo",
+    "....ooooo..owo",
+    "...ooowooo.oww",
+    "...oowwwoo.oww",
+    "...oowwwooooww",
+    "....w...w.yyw.",
+    ".........yyy.."]},
+  tengu:{pal:{k:"#2a2116", r:"#d0462f", d:"#9c2f1f", w:"#f4ede0", b:"#2f3a5a", y:"#f2b63b", g:"#4f9a45"}, px:[
+    "......bb......",
+    ".....bbbb.....",
+    "....rrrrrr....",
+    "...rrkrrkrr...",
+    "...rrrrrrrrrrr",
+    "...rrrrrrrrrr.",
+    "...wwwrrrwww..",
+    "..wwwwddwwwwy.",
+    ".bbbwwwwwwbyyy",
+    "bbbbbwwwwbbbyy",
+    ".bbbbwwwwbbb..",
+    "....bbggbb....",
+    "....bb..bb....",
+    "...yy....yy..."]},
+  chochin:{pal:{k:"#2a2116", c:"#f4e8c8", l:"#d8c8a0", r:"#d0462f", p:"#ef7fb0", y:"#ffe27a"}, px:[
+    ".....kkkk.....",
+    "....kkkkkk....",
+    "...cccccccc...",
+    "..llllllllll..",
+    "..cckcccckcc..",
+    "..cccccccccc..",
+    "..llllllllll..",
+    "..ccccrrcccc..",
+    "..cccrpprccc..",
+    "..llllpplll...",
+    "...ccccpccc...",
+    "....kkkpkk....",
+    ".....kkkk.....",
+    ".............."]},
+  yukinko:{pal:{k:"#2a2116", w:"#ffffff", b:"#bcd8f0", d:"#7fa8d0", p:"#f7b7cf", s:"#5a86c8"}, px:[
+    "....bbbbb.....",
+    "...bbbbbbb....",
+    "..bbwwwwwbb...",
+    "..bwkwwwkwb...",
+    "..bwpwwwpwb...",
+    "..bbwwkwwbb...",
+    "...sbbbbbs....",
+    "..ssswwwsss...",
+    ".sssswwwssss..",
+    "..ssswwwsss...",
+    "...sswwwss....",
+    "....ss.ss.....",
+    "....dd.dd.....",
+    ".............."]},
+  umibozu:{pal:{k:"#101418", b:"#2c3a52", d:"#1c2638", w:"#f4f8fa", B:"#4389c2", L:"#9fd0f0"}, px:[
+    "....bbbbbb....",
+    "...bbbbbbbb...",
+    "..bbbbbbbbbb..",
+    "..bbwwbbwwbb..",
+    ".bbbwkbbkwbbb.",
+    ".bbbbbbbbbbbb.",
+    ".bbbbdddbbbbb.",
+    "bbbbbbbbbbbbbb",
+    "bbbbbbbbbbbbbb",
+    "dbbbbbbbbbbbbd",
+    "BdbbbbbbbbbbdB",
+    "BBBdbbbbbbdBBB",
+    "LBBBBBBBBBBBBL",
+    ".LLBBLLLBBLL.."]},
+  komainu:{pal:{k:"#2a2116", s:"#b8bcc2", d:"#7d838c", g:"#4f9a45", r:"#c8402b", y:"#f2b63b"}, px:[
+    "...ggg..ggg...",
+    "..gsssggsssg..",
+    "..gsksssskgg..",
+    "..gsssssssgg..",
+    "..gssrrrssg...",
+    "...gsrrsssg...",
+    "..rrrryyrrr...",
+    "..dssssssssd..",
+    ".dssssssssssd.",
+    ".dsssssssssgg.",
+    ".dssssssssgggg",
+    "..sss..sss.gg.",
+    "..dddddddddd..",
+    ".dddddddddddd."]},
+  hoo:{pal:{k:"#2a2116", r:"#d0462f", o:"#f39a33", y:"#ffe27a", g:"#4f9a45", b:"#5a86c8", p:"#ef7fb0"}, px:[
+    "....yy........",
+    "...yrry.......",
+    "...rkrr.......",
+    "...rrrro......",
+    "....rro.......",
+    "y..ooooo...y..",
+    "yy.oyyyyo.yy..",
+    ".yyooyyoyyyy..",
+    "..yyooooyy....",
+    "....oooo......",
+    "....rbgpr.....",
+    "...rbg.gpr....",
+    "..rb.g.g.pr...",
+    ".r..g...g..r.."]},
+  ryu:{pal:{k:"#2a2116", g:"#3f9a7a", d:"#2a6a54", y:"#f2b63b", w:"#ffffff", r:"#d0462f", c:"#e8e0c0"}, px:[
+    "y...y.........",
+    ".y.y..........",
+    ".gggg.........",
+    "gwkggg........",
+    "gggggggr......",
+    "ccgggggg......",
+    ".rr..gggg.....",
+    ".....dggggg...",
+    "....yggggggg..",
+    "...ggdd..dggg.",
+    "..ggg.....ggg.",
+    "..ggd.....dgg.",
+    "...gggd.dggg..",
+    ".....ggggg...."]}
+};
+
+</script>
+<script>
+/* Spirit Woods: befriend folklore spirits (yōkai) in duels where every move, item and lantern needs a right Japanese answer.
+   State lives in the village save (tama.sp) so it syncs and moves with save codes like everything else. */
+var GobuSpirits = (function(){
+"use strict";
+var V = Village.spirit, ART = window.GOBU_SPIRIT_ART;
+function $(id){ return document.getElementById("s-" + id); }
+function esc(x){ return String(x).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+function shuffle(a){ a = a.slice(); for (var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+// ---------- data ----------
+var TYPES = {
+  fire:{k:"火", r:"hi", en:"fire", col:"#d0562a"},
+  water:{k:"水", r:"mizu", en:"water", col:"#3d7fc8"},
+  wood:{k:"木", r:"ki", en:"wood", col:"#4f9a45"}
+};
+var STRONG = {fire:"wood", wood:"water", water:"fire"};
+var SP = [
+  {id:"kodama", name:"Kodama", jp:"こだま", type:"wood", hp:22, atk:4, rare:1, lore:"A tiny tree spirit. When you hear an echo in the forest, people say it is a kodama answering you."},
+  {id:"tanuki", name:"Tanuki", jp:"たぬき", type:"wood", hp:26, atk:4, rare:1, lore:"A round raccoon dog who loves pranks. With a leaf on his head he can disguise himself as almost anything."},
+  {id:"hinotama", name:"Hinotama", jp:"ひのたま", type:"fire", hp:20, atk:5, rare:1, lore:"A floating ball of soft fire that drifts about on warm summer nights."},
+  {id:"kawauso", name:"Kawauso", jp:"かわうそ", type:"water", hp:24, atk:4, rare:1, lore:"A playful river otter spirit that collects shiny pebbles and plays tricks on fishermen."},
+  {id:"tsuchinoko", name:"Tsuchinoko", jp:"つちのこ", type:"wood", hp:28, atk:5, rare:3, lore:"A chubby snake that is said to hop and roll. Many people search for it; very few find it."},
+  {id:"kappa", name:"Kappa", jp:"かっぱ", type:"water", hp:28, atk:5, rare:2, lore:"A river imp with a dish of water on its head. Bow to a kappa and it will politely bow back."},
+  {id:"bakeneko", name:"Bakeneko", jp:"ばけねこ", type:"fire", hp:24, atk:6, rare:2, lore:"A cat that grew so old it became a spirit. At night it dances with a towel on its head."},
+  {id:"baku", name:"Baku", jp:"ばく", type:"wood", hp:32, atk:4, rare:2, lore:"A gentle creature that eats bad dreams. Call its name after a nightmare and it will gobble the dream up."},
+  {id:"amabie", name:"Amabie", jp:"アマビエ", type:"water", hp:26, atk:6, rare:3, lore:"A glowing sea spirit with a beak and three tails. It promised good health to anyone who shares its picture."},
+  {id:"kitsune", name:"Kitsune", jp:"きつね", type:"fire", hp:28, atk:6, rare:2, lore:"A clever fox spirit. The older and wiser it gets, the more tails it grows, up to nine."},
+  {id:"tengu", name:"Tengu", jp:"てんぐ", type:"wood", hp:30, atk:6, rare:2, lore:"A mountain spirit with a long red nose and a feather fan, said to be a master of martial arts."},
+  {id:"chochin", name:"Chōchin-obake", jp:"ちょうちんおばけ", type:"fire", hp:26, atk:5, rare:2, lore:"An old paper lantern that came to life. It sticks out its long tongue to surprise people."},
+  {id:"yukinko", name:"Yukinko", jp:"ゆきんこ", type:"water", hp:26, atk:5, rare:3, lore:"A little snow child who appears in snowstorms and wants someone to play with."},
+  {id:"umibozu", name:"Umibōzu", jp:"うみぼうず", type:"water", hp:36, atk:6, rare:2, lore:"A huge, dark sea spirit that rises out of calm water. Sailors say it asks for a bucket."},
+  {id:"komainu", name:"Komainu", jp:"こまいぬ", type:"wood", hp:38, atk:7, rare:4, lore:"A lion-dog guardian that stands in pairs at shrine gates: one with its mouth open, one with it closed."},
+  {id:"hoo", name:"Hōō", jp:"ほうおう", type:"fire", hp:40, atk:8, rare:4, lore:"A rare and beautiful phoenix that appears only in times of peace and good fortune."},
+  {id:"ryu", name:"Ryū", jp:"りゅう", type:"water", hp:42, atk:8, rare:4, lore:"A dragon of clouds and rain. It flies without wings and brings rain to the rice fields."}
+];
+var BY = {}; SP.forEach(function(s){ BY[s.id] = s; });
+var STARTERS = ["kodama", "hinotama", "kawauso"];
+var MOVES = {
+  fire:[{jp:"ひのこ", r:"hinoko", en:"sparks", pow:4, lv:1, tier:1}, {jp:"ほのお", r:"honoo", en:"flames", pow:6, lv:4, tier:2}, {jp:"はなび", r:"hanabi", en:"fireworks", pow:9, lv:7, tier:3}],
+  water:[{jp:"しずく", r:"shizuku", en:"droplet", pow:4, lv:1, tier:1}, {jp:"なみ", r:"nami", en:"wave", pow:6, lv:4, tier:2}, {jp:"たき", r:"taki", en:"waterfall", pow:9, lv:7, tier:3}],
+  wood:[{jp:"はっぱ", r:"happa", en:"leaves", pow:4, lv:1, tier:1}, {jp:"つる", r:"tsuru", en:"vine", pow:6, lv:4, tier:2}, {jp:"もり", r:"mori", en:"forest", pow:9, lv:7, tier:3}]
+};
+var SMILE = {jp:"えがお", r:"egao", en:"smile", pow:0, lv:1, tier:1, smile:true};
+var ITEMS = {
+  onigiri:{jp:"おにぎり", r:"onigiri", en:"rice ball", price:3, text:"Restores half of a spirit's energy."},
+  ocha:{jp:"おちゃ", r:"ocha", en:"green tea", price:2, text:"Restores a quarter of a spirit's energy."},
+  omamori:{jp:"おまもり", r:"omamori", en:"lucky charm", price:5, text:"Your next move is twice as strong."},
+  chochin:{jp:"ちょうちん", r:"chouchin", en:"paper lantern", price:4, text:"Light one to invite a tired spirit to be your friend."}
+};
+var ITEM_DISTRACT = ["umbrella", "sandals", "fan", "kite", "teapot", "bell"];
+var AREAS = [
+  {id:"edge", name:"Forest edge", jp:"もりの はずれ", pool:["kodama","tanuki","hinotama","kawauso","tsuchinoko"], lv:[1,4], open:function(){ return true; }},
+  {id:"river", name:"Riverside reeds", jp:"かわべ", pool:["kappa","bakeneko","baku","amabie","kawauso"], lv:[3,6], open:function(){ return V.villageDone(); }, need:"Opens when the village is finished"},
+  {id:"pass", name:"Snowy mountain pass", jp:"やまみち", pool:["kitsune","tengu","chochin","yukinko","tanuki"], lv:[5,8], open:function(){ return V.chapter2(); }, need:"Opens after the sixth adventure"},
+  {id:"harbour", name:"Harbour waters", jp:"みなと", pool:["umibozu","kappa","amabie","kawauso"], lv:[6,9], open:function(){ return V.chapter2(); }, need:"Opens after the sixth adventure"},
+  {id:"spirit", name:"Spirit Mountain", jp:"れいざん", pool:["komainu","hoo","ryu","kitsune"], lv:[8,10], open:function(){ return V.advDone() >= 12; }, need:"Opens after the Spirit Mountain adventure"}
+];
+var WEIGHT = {1:6, 2:3, 3:1, 4:2};
+var MAXLV = 10;
+
+// ---------- state ----------
+function st(){ return V.state(); }
+function save(s){ V.save(s); }
+function maxHp(id, lv){ return BY[id].hp + (lv - 1)*4; }
+function atkOf(id, lv){ return BY[id].atk + (lv - 1); }
+function xpNeed(lv){ return lv*15; }
+function movesFor(id, lv){ return MOVES[BY[id].type].filter(function(m){ return m.lv <= lv; }).concat([SMILE]); }
+function unmet(){ var s = st(); return SP.length - (s && s.book ? Object.keys(s.book).length : 0); }
+
+// ---------- sprites ----------
+var cache = {};
+function spriteCanvas(id, dark){
+  var key = id + (dark ? ":d" : ""); if (cache[key]) return cache[key];
+  var a = ART[id], cv = document.createElement("canvas"); cv.width = 14; cv.height = 14;
+  var c = cv.getContext("2d");
+  a.px.forEach(function(row, y){ for (var x=0;x<14;x++){ var ch = row.charAt(x); if (ch && ch !== "."){ c.fillStyle = dark ? "#4a3d30" : a.pal[ch]; c.fillRect(x, y, 1, 1); } } });
+  cache[key] = cv; return cv;
+}
+function spriteEl(id, size, dark){
+  var cv = document.createElement("canvas"); cv.width = 14; cv.height = 14; cv.className = "sp-spr"; cv.style.width = cv.style.height = size + "px";
+  cv.getContext("2d").drawImage(spriteCanvas(id, dark), 0, 0); return cv;
+}
+function typeBadge(t){ var T = TYPES[t]; return '<span class="sp-type" style="background:' + T.col + '" title="' + T.en + '">' + T.k + '<small>' + T.r + '</small></span>'; }
+
+// ---------- questions from what the player is learning ----------
+function appPool(app, filter){
+  var a = window.GobuApps && window.GobuApps[app]; if (!a) return [];
+  var items = a.items(), stt = a.stats() || {}, open = {};
+  if (a.pages) a.pages().forEach(function(pg){ if (!pg.locked) pg.items.forEach(function(it){ open[it.k] = 1; }); });
+  items = items.filter(function(it){ return open[it.k] && (!filter || filter(it)); });
+  var seen = items.filter(function(it){ return stt[it.k]; });
+  return seen.length >= 6 ? seen : items;
+}
+function makeQ(app, items, field, prompt){
+  var it = pick(items), opts = [it[field]], seenV = {}; seenV[it[field]] = 1;
+  shuffle(items).forEach(function(x){ if (opts.length < 4 && x[field] && !seenV[x[field]]){ seenV[x[field]] = 1; opts.push(x[field]); } });
+  if (opts.length < 3) return null;
+  return {app:app, key:it.k, big:it.k, prompt:prompt, options:shuffle(opts), answer:it[field]};
+}
+function question(tier){
+  var tries = tier === 3 ? [["p"], ["j"], ["h","k"]] : tier === 2 ? [["j"], ["k"], ["h"]] : [["h","k"]];
+  for (var i=0;i<tries.length;i++){
+    var app = pick(tries[i]), q = null;
+    if (app === "p"){ var pp = appPool("p"); if (pp.length >= 4) q = makeQ("p", pp, "en", "What does this mean?"); }
+    else if (app === "j"){ var jp = appPool("j"); if (jp.length >= 4) q = makeQ("j", jp, "en", "What does this kanji mean?"); }
+    else if (app === "k" && tier === 2){ var kw = appPool("k", function(it){ return /words|small/.test(it.row || ""); }); if (kw.length >= 4) q = makeQ("k", kw, "r", "How do you read this word?"); }
+    else { var kp = appPool(app, function(it){ return !/words|small/.test(it.row || ""); }); if (kp.length >= 4) q = makeQ(app, kp, "r", "How do you read this?"); }
+    if (q) return q;
+  }
+  var hp2 = appPool("h"); return makeQ("h", hp2.length >= 4 ? hp2 : window.GobuApps.h.items(), "r", "How do you read this?");
+}
+function itemQ(id){
+  var I = ITEMS[id], opts = [I.en];
+  shuffle(Object.keys(ITEMS).filter(function(k){ return k !== id; }).map(function(k){ return ITEMS[k].en; }).concat(shuffle(ITEM_DISTRACT).slice(0,2))).forEach(function(o){ if (opts.length < 4 && opts.indexOf(o) < 0) opts.push(o); });
+  return {item:id, big:I.jp, prompt:"What is " + I.jp + " (" + I.r + ") in English?", options:shuffle(opts), answer:I.en};
+}
+
+// ---------- battle ----------
+var B = null;
+function startBattle(areaId){
+  var s = st(), A = AREAS.filter(function(a){ return a.id === areaId; })[0];
+  if (!s || !s.team.length || !A || !A.open()) return;
+  var bag = []; A.pool.forEach(function(id){ for (var k=0;k<WEIGHT[BY[id].rare];k++) bag.push(id); });
+  var wid = pick(bag), lead = s.book[s.team[0]];
+  var lo = A.lv[0], hi = Math.min(A.lv[1], Math.max(lo, lead.lv + 1)), lv = lo + Math.floor(Math.random()*(hi - lo + 1));
+  B = {area:A, wild:{id:wid, lv:lv, hp:maxHp(wid, lv), max:maxHp(wid, lv)}, team:s.team.map(function(id){ var o = s.book[id]; return {id:id, lv:o.lv, hp:maxHp(id, o.lv), max:maxHp(id, o.lv)}; }),
+       cur:0, boost:false, smiles:0, busy:false, over:false, shake:{who:"", until:0}, fx:null};
+  s.seen = s.seen || {}; s.seen[wid] = 1; save(s);
+  showScreen("battle");
+  renderBattle(); say("A wild " + BY[wid].name + " (" + BY[wid].jp + ") appears!"); menu(); Sfx.play("whoosh");
+  ensureAnim();
+}
+function lead(){ return B.team[B.cur]; }
+function say(t){ $("bMsg").textContent = t; }
+function setButtons(html){ $("bAct").innerHTML = html; }
+function menu(){
+  var s = st(), lanterns = s.bag.chochin || 0;
+  B.busy = false;
+  setButtons('<button class="sp-btn" data-a="moves">Moves</button><button class="sp-btn" data-a="bag">Bag</button>' +
+    '<button class="sp-btn" data-a="friend"' + (lanterns ? '' : ' disabled') + '>Befriend <small>' + lanterns + ' lantern' + (lanterns === 1 ? '' : 's') + '</small></button><button class="sp-btn alt" data-a="run">Run</button>');
+  $("bQ").innerHTML = "";
+}
+function movesMenu(){
+  var L = lead(), html = movesFor(L.id, L.lv).map(function(m, i){ return '<button class="sp-btn mv" data-mv="' + i + '"><b>' + m.jp + '</b><small>' + m.r + (m.smile ? " · makes friends easier" : " · " + ["","easy","medium","hard"][m.tier] + " question") + '</small></button>'; }).join("");
+  setButtons(html + '<button class="sp-btn alt" data-a="back">Back</button>');
+}
+function bagMenu(){
+  var s = st(), html = "";
+  ["onigiri","ocha","omamori"].forEach(function(id){ var n = s.bag[id] || 0; html += '<button class="sp-btn mv" data-item="' + id + '"' + (n ? '' : ' disabled') + '><b>' + ITEMS[id].jp + '</b><small>' + ITEMS[id].r + ' · ×' + n + '</small></button>'; });
+  setButtons(html + '<button class="sp-btn alt" data-a="back">Back</button>');
+}
+function ask(q, done){
+  B.busy = true;
+  var box = $("bQ");
+  box.innerHTML = '<p class="sp-qp">' + esc(q.prompt) + '</p>' + (q.item ? '' : '<div class="sp-qbig">' + esc(q.big) + '</div>') + '<div class="sp-qopts">' + q.options.map(function(o, i){ return '<button class="sp-opt" data-o="' + i + '">' + esc(o) + '</button>'; }).join("") + '</div>';
+  setButtons("");
+  if (window.__gobuTest) box.querySelectorAll(".sp-opt").forEach(function(b){ if (q.options[+b.getAttribute("data-o")] === q.answer) b.setAttribute("data-right", "1"); });
+  box.querySelectorAll(".sp-opt").forEach(function(b){
+    b.onclick = function(){
+      if (box.dataset.locked) return; box.dataset.locked = "1";
+      var ok = q.options[+b.getAttribute("data-o")] === q.answer;
+      box.querySelectorAll(".sp-opt").forEach(function(x){ var v = q.options[+x.getAttribute("data-o")]; if (v === q.answer) x.classList.add("ok"); else if (x === b) x.classList.add("bad"); });
+      if (q.app && window.GobuApps[q.app] && window.GobuApps[q.app].answer) window.GobuApps[q.app].answer(q.key, ok); else Sfx.play(ok ? "good" : "bad");
+      setTimeout(function(){ delete box.dataset.locked; box.innerHTML = ""; done(ok); }, ok ? 650 : 1400);
+    };
+  });
+}
+function mult(atkType, defType){ return STRONG[atkType] === defType ? 1.6 : STRONG[defType] === atkType ? 0.6 : 1; }
+function dmg(pow, atk, m){ return Math.max(1, Math.round((pow + atk*0.6) * m * (0.85 + Math.random()*0.25))); }
+function useMove(m){
+  var L = lead();
+  ask(question(m.tier), function(ok){
+    if (!ok){ say("Not quite, so " + m.jp + " fizzled out. " + BY[L.id].name + " looks embarrassed."); return later(wildTurn, 1300); }
+    if (m.smile){
+      B.smiles = Math.min(3, B.smiles + 1); B.fx = {kind:"hearts", until:performance.now() + 1200};
+      say(BY[L.id].name + " gives a big えがお (egao, smile). The wild " + BY[B.wild.id].name + " looks friendlier."); return later(wildTurn, 1400);
+    }
+    var mm = mult(BY[L.id].type, BY[B.wild.id].type), d = dmg(m.pow, atkOf(L.id, L.lv), mm) * (B.boost ? 2 : 1);
+    B.boost = false; B.wild.hp = Math.max(0, B.wild.hp - d); B.shake = {who:"wild", until:performance.now() + 450}; B.fx = {kind:BY[L.id].type, at:"wild", until:performance.now() + 600};
+    Sfx.play("whoosh");
+    say(BY[L.id].name + " used " + m.jp + " (" + m.r + ", " + m.en + ")!" + (mm > 1 ? " Strong against " + TYPES[BY[B.wild.id].type].en + "!" : mm < 1 ? " Not very strong against " + TYPES[BY[B.wild.id].type].en + "." : ""));
+    renderBars();
+    if (B.wild.hp <= 0) return later(win, 1300);
+    later(wildTurn, 1400);
+  });
+}
+function useItem(id){
+  var s = st(), L = lead();
+  ask(itemQ(id), function(ok){
+    if (!ok){ say("Oops! You reached for the wrong thing. " + ITEMS[id].jp + " means " + ITEMS[id].en + "."); return later(wildTurn, 1500); }
+    s.bag[id]--; save(s);
+    if (id === "omamori"){ B.boost = true; say("You hold up the おまもり (omamori). " + BY[L.id].name + "'s next move will be twice as strong!"); }
+    else { var h = Math.round(L.max * (id === "onigiri" ? 0.5 : 0.25)); L.hp = Math.min(L.max, L.hp + h); B.fx = {kind:"heal", until:performance.now() + 900}; say(BY[L.id].name + " enjoys the " + ITEMS[id].jp + " (" + ITEMS[id].r + "). +" + h + " energy."); Sfx.play("nom"); renderBars(); }
+    later(wildTurn, 1400);
+  });
+}
+function befriend(){
+  var s = st(), W = B.wild;
+  ask(question(BY[W.id].rare >= 3 ? 3 : 2), function(ok){
+    if (!ok){ say("The lantern flickers out before it lights. Try again!"); return later(wildTurn, 1400); }
+    s.bag.chochin--; save(s);
+    var base = {1:0.85, 2:0.65, 3:0.45, 4:0.32}[BY[W.id].rare], chance = Math.max(0.05, Math.min(0.97, base * (1.2 - W.hp/W.max) + B.smiles*0.12));
+    B.fx = {kind:"lantern", until:performance.now() + 1600}; say("You light a ちょうちん (chouchin) and hold it out to " + BY[W.id].name + "...");
+    later(function(){
+      if (Math.random() < chance) return friendMade();
+      say(BY[W.id].name + " looks at the lantern, then shakes its head. Not yet!"); later(wildTurn, 1300);
+    }, 1700);
+  });
+}
+function friendMade(){
+  var s = st(), W = B.wild, isNew = !s.book[W.id], events = [];
+  B.over = true; B.fx = {kind:"hearts", until:performance.now() + 2500}; Sfx.play("secret");
+  if (isNew){
+    s.book[W.id] = {lv:W.lv, xp:0, met:Date.now()}; if (s.team.length < 3) s.team.push(W.id); save(s);
+    events = V.steps(2, "new spirit friend").concat(V.event("befriend", 1));
+  } else { s.bag.chochin++; save(s); V.earn(3); }
+  gainXP(6 + W.lv*2, events);
+  finish((isNew ? BY[W.id].name + " (" + BY[W.id].jp + ") wants to be your friend! " + (s.team.indexOf(W.id) >= 0 ? "It joins your team." : "It's waiting in your spirit scroll.") : "You're already friends with a " + BY[W.id].name + ", so it gives you back the lantern and 3 mushrooms."), events, true);
+}
+function wildTurn(){
+  if (B.over) return;
+  var W = B.wild, L = lead(), mv = MOVES[BY[W.id].type].filter(function(m){ return m.lv <= W.lv; }), m = mv[mv.length - 1];
+  if (Math.random() < 0.4) m = mv[0];
+  var calm = 1 - B.smiles*0.12, d = Math.max(1, Math.round(dmg(m.pow, atkOf(W.id, W.lv), mult(BY[W.id].type, BY[L.id].type)) * 0.8 * calm));
+  L.hp = Math.max(0, L.hp - d); B.shake = {who:"me", until:performance.now() + 450}; B.fx = {kind:BY[W.id].type, at:"me", until:performance.now() + 600};
+  say("The wild " + BY[W.id].name + " used " + m.jp + " (" + m.r + ", " + m.en + ")!"); renderBars(); Sfx.play("bad");
+  if (L.hp > 0) return later(menu, 1100);
+  later(function(){
+    var next = B.team.findIndex(function(t){ return t.hp > 0; });
+    if (next < 0) return lose();
+    say(BY[L.id].name + " is tired out. Go, " + BY[B.team[next].id].name + "!"); B.cur = next; renderBattle(); later(menu, 1200);
+  }, 1200);
+}
+function win(){
+  var W = B.wild, events = [];
+  B.over = true; Sfx.play("fanfare");
+  var m = 1 + (W.lv >= 5 ? 1 : 0); V.earn(m);
+  events = V.event("wins", 1);
+  var s = st(); s.wins = (s.wins || 0) + 1; save(s);
+  gainXP(8 + W.lv*3, events);
+  finish("The wild " + BY[W.id].name + " is tired out and wanders off happily. +" + m + " mushroom" + (m > 1 ? "s" : "") + ".", events, true);
+}
+function lose(){ B.over = true; finish("Your spirits are worn out. They go back to rest by the village fire. Try again any time!", [], false); }
+function gainXP(n, events){
+  var s = st(), id = lead().id, o = s.book[id]; if (!o) return;
+  o.xp += n;
+  while (o.lv < MAXLV && o.xp >= xpNeed(o.lv)){
+    o.xp -= xpNeed(o.lv); o.lv++;
+    events.push({kind:"done", text:BY[id].name + " grew to level " + o.lv + "!"});
+    MOVES[BY[id].type].forEach(function(m){ if (m.lv === o.lv) events.push({kind:"done", text:BY[id].name + " learned " + m.jp + " (" + m.r + ", " + m.en + ")."}); });
+    Sfx.play("level");
+  }
+  if (o.lv >= MAXLV) o.xp = 0;
+  save(s);
+}
+function finish(text, events, good){
+  say(text);
+  var ev = (events || []).map(function(e){ return '<div class="sp-ev ' + (e.kind === "done" ? "done" : "") + '">' + esc(e.text) + '</div>'; }).join("");
+  $("bQ").innerHTML = ev ? '<div class="sp-evs">' + ev + '</div>' : "";
+  setButtons('<button class="sp-btn" data-a="again">Explore again</button><button class="sp-btn alt" data-a="home">Back to the woods</button>');
+  renderBars();
+}
+var timer = null;
+function later(f, ms){ clearTimeout(timer); timer = setTimeout(function(){ if (B) f(); }, ms); }
+function leave(){ clearTimeout(timer); B = null; showScreen("home"); render(); }
+function showScreen(id){ document.querySelectorAll("#app-s .screen").forEach(function(x){ x.classList.toggle("on", x.id === "s-" + id); }); window.scrollTo(0, 0); Shell.screen("s", id); }
+
+// ---------- battle drawing ----------
+var AW = 160, AH = 96, animOn = false;
+function drawArena(){
+  var cv = $("arena"); if (!cv || !B) return;
+  var c = cv.getContext("2d"), t = performance.now()/1000, A = B.area.id;
+  c.imageSmoothingEnabled = false;
+  var sky = {edge:["#9fd6f0","#d8f0e0"], river:["#9fd0f0","#e0f2f8"], pass:["#b8c8e0","#eef2f8"], harbour:["#8fc8f0","#d8eef8"], spirit:["#9a8fc8","#e0d8f0"]}[A];
+  var night = V.hour() >= 20 || V.hour() < 6;
+  for (var i=0;i<6;i++){ c.fillStyle = night ? ["#1a2048","#232a58","#2c3466","#343c70","#3c447a","#444c84"][i] : mix(sky[0], sky[1], i/5); c.fillRect(0, i*8, AW, 8); }
+  var ground = {edge:"#7cc35b", river:"#86c86a", pass:"#e8eef2", harbour:"#d8c79a", spirit:"#8aa070"}[A];
+  if (A === "pass"){ c.fillStyle = "#8a96b0"; for (var x=0;x<AW;x++){ var my = 18 + Math.round(10*Math.abs(Math.sin(x/19)) + 4*Math.abs(Math.sin(x/7))); c.fillRect(x, my, 1, 48 - my); c.fillStyle = "#ffffff"; if (my < 26) c.fillRect(x, my, 1, 2); c.fillStyle = "#8a96b0"; } }
+  if (A === "spirit"){ c.fillStyle = "#6f6aa0"; for (var x2=0;x2<AW;x2++){ var my2 = 10 + Math.round(26*Math.abs(Math.sin((x2+40)/52))); c.fillRect(x2, my2, 1, 48 - my2); } }
+  if (A === "harbour" || A === "river"){ c.fillStyle = A === "harbour" ? "#3f86c4" : "#4389c2"; c.fillRect(0, 34, AW, 14); c.fillStyle = "#9fd0f0"; for (var w=0;w<8;w++){ c.fillRect((w*23 + Math.floor(t*8)) % AW, 38 + (w%3)*3, 4, 1); } }
+  c.fillStyle = ground; c.fillRect(0, 48, AW, AH - 48);
+  if (A === "edge" || A === "spirit"){ [8,30,128,150].forEach(function(px, k){ c.fillStyle = A === "spirit" ? "#4f5a3a" : "#2f7a40"; tri(c, px, 26 + (k%2)*3, 5, 16); c.fillStyle = "#5e3b20"; c.fillRect(px-1, 42 + (k%2)*3, 2, 4); }); }
+  if (A === "spirit"){ c.fillStyle = "#c8402b"; c.fillRect(66, 30, 2, 18); c.fillRect(92, 30, 2, 18); c.fillRect(62, 30, 36, 2); c.fillRect(64, 34, 32, 1); }
+  if (A === "river"){ c.fillStyle = "#4f9a45"; for (var rd=0; rd<12; rd++) c.fillRect(4 + rd*13, 44 - (rd%3), 1, 6); }
+  // pads
+  c.fillStyle = "rgba(0,0,0,.15)"; ell(c, 118, 46, 20, 4); ell(c, 38, 86, 22, 5);
+  var now = performance.now(), W = B.wild, L = lead();
+  var wx = 104 + (B.shake.who === "wild" && now < B.shake.until ? Math.round(Math.sin(now/25)*2) : 0), wy = 4 + Math.round(Math.sin(t*2)*1.5);
+  if (!(B.over && W.hp <= 0 && !(B.fx && B.fx.kind === "hearts"))) c.drawImage(spriteCanvas(W.id), wx, wy, 28, 28);
+  var mx = 24 + (B.shake.who === "me" && now < B.shake.until ? Math.round(Math.sin(now/25)*2) : 0), my3 = 44 + Math.round(Math.sin(t*2 + 1)*1.5);
+  c.save(); c.translate(mx + 28, my3); c.scale(-1, 1); c.drawImage(spriteCanvas(L.id), 0, 0, 28, 28); c.restore();
+  // effects
+  if (B.fx && now < B.fx.until){
+    var f = B.fx, k2 = 1 - (f.until - now)/700, tx = f.at === "wild" ? 118 : 38, ty = f.at === "wild" ? 18 : 58;
+    var col = {fire:["#e8642c","#ffe27a"], water:["#5aa0d8","#cfe8f8"], wood:["#4f9a45","#b4f07a"]}[f.kind];
+    if (col){ for (var p=0;p<10;p++){ var ang = p/10*Math.PI*2 + t*3, rr = 4 + k2*12; c.fillStyle = col[p%2]; c.fillRect(Math.round(tx + Math.cos(ang)*rr), Math.round(ty + Math.sin(ang)*rr*0.7), 2, 2); } }
+    if (f.kind === "hearts"){ for (var h2=0;h2<5;h2++){ var hx = 70 + h2*9, hy = 40 - ((t*20 + h2*7) % 30); c.fillStyle = "#ef7fb0"; c.fillRect(hx, hy, 2, 2); c.fillRect(hx+3, hy, 2, 2); c.fillRect(hx, hy+1, 5, 2); c.fillRect(hx+1, hy+3, 3, 1); c.fillRect(hx+2, hy+4, 1, 1); } }
+    if (f.kind === "heal"){ for (var h3=0;h3<6;h3++){ c.fillStyle = "#b4f07a"; c.fillRect(30 + h3*5, 70 - ((t*25 + h3*9) % 26), 1, 3); c.fillRect(29 + h3*5, 71 - ((t*25 + h3*9) % 26), 3, 1); } }
+    if (f.kind === "lantern"){ var lx = 78, ly = 34; c.fillStyle = "rgba(255,210,120,.35)"; ell(c, lx+2, ly+3, 10 + Math.sin(t*8)*2, 8); c.fillStyle = "#2a2116"; c.fillRect(lx, ly-1, 5, 1); c.fillStyle = "#d0462f"; c.fillRect(lx, ly, 5, 6); c.fillStyle = "#ffe27a"; c.fillRect(lx+1, ly+1, 3, 4); }
+  }
+}
+function mix(a, b, t){ function h(x){ return [parseInt(x.substr(1,2),16), parseInt(x.substr(3,2),16), parseInt(x.substr(5,2),16)]; } var x = h(a), y = h(b), o = "#"; for (var i=0;i<3;i++){ var v = Math.round(x[i] + (y[i]-x[i])*t); o += ("0" + v.toString(16)).slice(-2); } return o; }
+function tri(c, cx, top, half, height){ for (var y=0;y<height;y++){ var w = Math.round(half * (y+1)/height); c.fillRect(cx - w, top + y, w*2 + 1, 1); } }
+function ell(c, cx, cy, rx, ry){ c.beginPath(); c.ellipse(cx, cy, rx, ry, 0, 0, Math.PI*2); c.fill(); }
+function ensureAnim(){ if (animOn) return; animOn = true; requestAnimationFrame(function loop(){ if (!B || !$("arena") || $("arena").offsetParent === null){ animOn = false; return; } drawArena(); requestAnimationFrame(loop); }); }
+function renderBattle(){
+  var W = B.wild, L = lead();
+  $("bWild").innerHTML = '<b>' + BY[W.id].jp + '</b> ' + BY[W.id].name + ' ' + typeBadge(BY[W.id].type) + '<span class="sp-lv">Lv ' + W.lv + '</span><span class="sp-hp"><i></i></span>';
+  $("bMe").innerHTML = '<b>' + BY[L.id].jp + '</b> ' + BY[L.id].name + ' ' + typeBadge(BY[L.id].type) + '<span class="sp-lv">Lv ' + L.lv + '</span><span class="sp-hp"><i></i></span><small class="sp-hpn"></small>';
+  renderBars();
+}
+function renderBars(){
+  if (!B) return;
+  var W = B.wild, L = lead();
+  var wf = W.hp/W.max, lf = L.hp/L.max;
+  $("bWild").querySelector(".sp-hp i").style.width = (wf*100) + "%"; $("bWild").querySelector(".sp-hp i").className = wf < 0.3 ? "low" : "";
+  $("bMe").querySelector(".sp-hp i").style.width = (lf*100) + "%"; $("bMe").querySelector(".sp-hp i").className = lf < 0.3 ? "low" : "";
+  $("bMe").querySelector(".sp-hpn").textContent = L.hp + "/" + L.max;
+}
+
+// ---------- home ----------
+function render(){
+  var s = st(), host = $("homeBody"); if (!host) return;
+  host.innerHTML = "";
+  if (!s || !s.team || !s.team.length){
+    host.innerHTML = '<section class="sp-panel sp-intro"><h2>The Spirit Woods <span class="jp">ようかいの もり</span></h2><p>Spirits called yōkai live in the woods and hills around Kanamura. Duel them with Japanese: every move, every item and every friendship lantern needs a right answer, using the kana, kanji and phrases you are learning.</p><p><b>Choose your first spirit friend:</b></p><div class="sp-starters"></div></section>';
+    var box = host.querySelector(".sp-starters");
+    STARTERS.forEach(function(id){
+      var b = document.createElement("button"); b.className = "sp-starter";
+      b.appendChild(spriteEl(id, 56));
+      b.insertAdjacentHTML("beforeend", '<b>' + BY[id].jp + '</b><span>' + BY[id].name + '</span>' + typeBadge(BY[id].type));
+      b.onclick = function(){ var n = {team:[id], book:{}, seen:{}, bag:{onigiri:2, ocha:2, omamori:1, chochin:3}, wins:0}; n.book[id] = {lv:1, xp:0, met:Date.now()}; n.seen[id] = 1; save(n); Sfx.play("secret"); render(); };
+      box.appendChild(b);
+    });
+    return;
+  }
+  // team
+  var team = document.createElement("section"); team.className = "sp-panel";
+  team.innerHTML = '<div class="sp-ph"><h3>Your team</h3><small>Tap a spirit to send it out first</small></div><div class="sp-team"></div>';
+  s.team.forEach(function(id, k){
+    var o = s.book[id], card = document.createElement("button"); card.className = "sp-card" + (k === 0 ? " lead" : "");
+    card.appendChild(spriteEl(id, 42));
+    card.insertAdjacentHTML("beforeend", '<div><b>' + BY[id].jp + '</b> ' + typeBadge(BY[id].type) + '<span>' + BY[id].name + ' · Lv ' + o.lv + (k === 0 ? ' · first out' : '') + '</span><span class="sp-xp"><i style="width:' + (o.lv >= MAXLV ? 100 : Math.round(100*o.xp/xpNeed(o.lv))) + '%"></i></span></div>');
+    card.onclick = function(){ s.team.splice(k, 1); s.team.unshift(id); save(s); render(); };
+    team.querySelector(".sp-team").appendChild(card);
+  });
+  host.appendChild(team);
+  // explore
+  var ex = document.createElement("section"); ex.className = "sp-panel";
+  ex.innerHTML = '<div class="sp-ph"><h3>Explore</h3><small>' + TYPES.fire.k + ' beats ' + TYPES.wood.k + ', ' + TYPES.wood.k + ' beats ' + TYPES.water.k + ', ' + TYPES.water.k + ' beats ' + TYPES.fire.k + '</small></div><div class="sp-areas"></div>';
+  AREAS.forEach(function(A){
+    var open = A.open(), b = document.createElement("button"); b.className = "sp-area" + (open ? "" : " locked"); b.disabled = !open;
+    var met = A.pool.filter(function(id){ return s.book[id]; }).length;
+    b.innerHTML = '<b>' + A.name + ' <span class="jp">' + A.jp + '</span></b><small>' + (open ? "Level " + A.lv[0] + " to " + A.lv[1] + " · friends " + met + "/" + A.pool.length : A.need) + '</small>';
+    b.onclick = function(){ startBattle(A.id); };
+    ex.querySelector(".sp-areas").appendChild(b);
+  });
+  host.appendChild(ex);
+  // bag and shop
+  var shop = document.createElement("section"); shop.className = "sp-panel";
+  shop.innerHTML = '<div class="sp-ph"><h3>Bag and shop</h3><small class="sp-mush">You have ' + V.mush() + ' mushrooms</small></div><div class="sp-shop"></div><p class="sp-note">Learn these words here: in a duel the bag only shows their Japanese names.</p>';
+  Object.keys(ITEMS).forEach(function(id){
+    var I = ITEMS[id], row = document.createElement("div"); row.className = "sp-item";
+    row.innerHTML = '<div><b>' + I.jp + '</b> <span class="sp-r">' + I.r + '</span> · ' + I.en + '<small>' + I.text + '</small></div><span class="sp-count">×' + (s.bag[id] || 0) + '</span><button class="sp-buy"' + (V.mush() >= I.price ? '' : ' disabled') + '>Buy · ' + I.price + ' 🍄</button>';
+    row.querySelector(".sp-buy").onclick = function(){ if (V.spend(I.price)){ s = st(); s.bag[id] = (s.bag[id] || 0) + 1; save(s); Sfx.play("coin"); render(); } };
+    shop.querySelector(".sp-shop").appendChild(row);
+  });
+  host.appendChild(shop);
+  // scroll
+  var sc = document.createElement("section"); sc.className = "sp-panel";
+  var nMet = Object.keys(s.book).length;
+  sc.innerHTML = '<div class="sp-ph"><h3>Spirit scroll</h3><small>' + nMet + ' of ' + SP.length + ' friends · ' + (s.wins || 0) + ' duels won</small></div><div class="sp-scroll"></div><div class="sp-detail"></div>';
+  SP.forEach(function(sp){
+    var have = !!s.book[sp.id], seen = s.seen && s.seen[sp.id], b = document.createElement("button"); b.className = "sp-cell" + (have ? " have" : "");
+    b.appendChild(spriteEl(sp.id, 34, !have));
+    b.insertAdjacentHTML("beforeend", '<small>' + (have || seen ? sp.jp : "？") + '</small>');
+    b.onclick = function(){ showDetail(sc.querySelector(".sp-detail"), sp, s); };
+    sc.querySelector(".sp-scroll").appendChild(b);
+  });
+  host.appendChild(sc);
+}
+function showDetail(el, sp, s){
+  var have = !!s.book[sp.id], seen = s.seen && s.seen[sp.id];
+  if (!have && !seen){ el.innerHTML = '<p class="sp-note">You haven\'t met this spirit yet. Keep exploring!</p>'; return; }
+  el.innerHTML = '<div class="sp-det"><div class="sp-dimg"></div><div><b>' + sp.jp + '</b> ' + sp.name + ' ' + typeBadge(sp.type) + (have ? ' <span class="sp-lv">Lv ' + s.book[sp.id].lv + '</span>' : '') + '<p>' + (have ? sp.lore : "You've seen one, but you aren't friends yet. Tire it out, smile, then light a lantern.") + '</p></div></div>';
+  el.querySelector(".sp-dimg").appendChild(spriteEl(sp.id, 56, !have));
+  if (have && s.team.indexOf(sp.id) < 0){
+    var b = document.createElement("button"); b.className = "sp-btn"; b.textContent = s.team.length < 3 ? "Add to team" : "Swap in for " + BY[s.team[s.team.length-1]].name;
+    b.onclick = function(){ if (s.team.length >= 3) s.team.pop(); s.team.push(sp.id); save(s); render(); };
+    el.querySelector(".sp-det > div:last-child").appendChild(b);
+  }
+}
+
+// ---------- wiring ----------
+function onClick(e){
+  var b = e.target.closest("button"); if (!b || !B) return;
+  if (b.closest("#s-bAct")){
+    var a = b.getAttribute("data-a");
+    if (a === "moves") return movesMenu();
+    if (a === "bag") return bagMenu();
+    if (a === "back") return menu();
+    if (a === "run"){ say("You tiptoe away. The wild spirit goes back to its game."); return later(leave, 900); }
+    if (a === "friend") return befriend();
+    if (a === "again"){ var id = B.area.id; B = null; return startBattle(id); }
+    if (a === "home") return leave();
+    if (b.hasAttribute("data-mv")){ var L = lead(); return useMove(movesFor(L.id, L.lv)[+b.getAttribute("data-mv")]); }
+    if (b.hasAttribute("data-item")) return useItem(b.getAttribute("data-item"));
+  }
+}
+function init(){
+  var root = document.getElementById("app-s"); if (!root) return;
+  root.addEventListener("click", onClick);
+  $("bQuit").onclick = function(){ leave(); };
+  render();
+}
+window.GobuApps = window.GobuApps || {};
+window.GobuApps.s = {refresh:function(){ if (!B) render(); }};
+return {init:init, render:render, unmet:unmet, count:function(){ var s = st(); return s && s.book ? Object.keys(s.book).length : 0; }};
+})();
+
+GobuSpirits.init();
 </script>
 <script>Shell.apply(); if (Village.isFresh() && !window.__gobuSkipTour) setTimeout(function(){ Village.startTour(Village.cfgTour ? Village.cfgTour() : null); }, 700);</script>
 </body>
